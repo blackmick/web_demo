@@ -51,7 +51,26 @@ class FollowController extends SafeController
     }
 
     public function actionDelete(){
+        $opModel = $this->validatePrivilege();
+        $user_id = DataHelper::getIntReq('user_id');
+        $follow_id = DataHelper::getIntReq('id');
+        $type = DataHelper::getIntReq('type');
 
+        $followModel = $$this->_modeMap[$type]::model()->findByPk($user_id);
+        if (!$followModel || $followModel->uid != $opModel->id){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE);
+        }
+
+        $oldList = $followModel->list;
+        $newList = array_diff($oldList, array($follow_id));
+
+        $followModel->list = $newList;
+
+        if (!$followModel->save()){
+            ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'modify follow model list fail.'.json_encode($followModel->getErrors()));
+        }
+
+        ErrorHelper::Success();
     }
 
     public function actionList(){

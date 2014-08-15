@@ -100,4 +100,16 @@ class FollowJob extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getData(){
+        $attr = $this->getAttributes();
+        $arrJobId = explode(',',$attr->list);
+        $jobModel = Job::model()->findAllByPk($arrJobId);
+        if (!$jobModel)
+            return false;
+
+        foreach(){
+
+        }
+    }
 }

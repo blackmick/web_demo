@@ -109,4 +109,10 @@ class Company extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getData(){
+        $attr = $this->getAttributes();
+        $oData = $attr;
+        return $oData;
+    }
 }

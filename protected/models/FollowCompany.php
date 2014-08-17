@@ -100,4 +100,20 @@ class FollowCompany extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getData(){
+        $attr = $this->getAttributes();
+        $arrCompanyId = explode(',',$attr->list);
+        $arrCompany = Company::model()->findAllByPk($arrCompanyId);
+        $models = Job::model()->getByCompany($arrCompany);
+        if (!$models)
+            return false;
+
+        $oData = array();
+        foreach($models as $job){
+            $oData[] = $job->getData();
+        }
+
+        return $oData;
+    }
 }

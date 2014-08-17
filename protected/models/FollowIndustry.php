@@ -100,4 +100,20 @@ class FollowIndustry extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getData(){
+        $attr = $this->getAttributes();
+        $arrIndustryId = explode(',',$attr->list);
+        $arrIndustry = Industry::model()->findAllByPk($arrIndustryId);
+        $model = Job::model()->getByIndustry($arrIndustry);
+        if (!$model)
+            return false;
+
+        $oData = array();
+        foreach($model as $job){
+            $oData[] = $job->getData();
+        }
+
+        return $oData;
+    }
 }

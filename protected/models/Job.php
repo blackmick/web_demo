@@ -116,4 +116,19 @@ class Job extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getData(){
+        $attr = $this->getAttributes();
+        $oData = $attr;
+
+        return $oData;
+    }
+
+    public function getByCompany($arrCompany){
+
+    }
+
+    public function getByIndustry($arrIndustry){
+
+    }
 }

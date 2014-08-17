@@ -90,17 +90,18 @@ CREATE TABLE IF NOT EXISTS `tbl_experience` (
 # /*---职位信息表---*/
 DROP TABLE IF EXISTS `tbl_job`;
 CREATE TABLE IF NOT EXISTS `tbl_job`(
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    title varchar(128) NOT NULL DEFAULT '',
-    company_id INT NOT NULL DEFAULT '0' COMMENT 'enterprise id',
-    create_time INT NOT NULL DEFAULT '0',
-    publish_time INT NOT NULL DEFAULT '0',
-    insert_time INT NOT NULL DEFAULT '0',
-    update_time INT NOT NULL DEFAULT '0',
-    location INT NOT NULL DEFAULT '0',
-    description varchar(2048) NOT NULL DEFAULT '',
-    responsibility VARCHAR(2048) NOT NULL DEFAULT '',
-    keyword VARCHAR(256) NOT NULL DEFAULT ''
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `title` varchar(128) NOT NULL DEFAULT '',
+    `company_id` INT NOT NULL DEFAULT '0' COMMENT 'enterprise id',
+    `industry` INT NOT NULL DEFAULT '0',
+    `publish_time` INT NOT NULL DEFAULT '0',
+    `location` INT NOT NULL DEFAULT '0',
+    `description` varchar(2048) NOT NULL DEFAULT '',
+    `responsibility` VARCHAR(2048) NOT NULL DEFAULT '',
+    `keyword` VARCHAR(256) NOT NULL DEFAULT '',
+    `create_time` INT NOT NULL DEFAULT '0',
+    `update_time` INT NOT NULL DEFAULT '0',
+    `status` INT NOT NULL DEFAULT '0'
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 # ---企业信息表---

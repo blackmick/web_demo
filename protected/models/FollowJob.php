@@ -108,8 +108,11 @@ class FollowJob extends CActiveRecord
         if (!$jobModel)
             return false;
 
-        foreach(){
-
+        $oData = array();
+        foreach($jobModel as $jModel){
+            $oData[] = $jModel->getData();
         }
+
+        return $oData;
     }
 }

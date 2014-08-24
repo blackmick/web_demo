@@ -28,6 +28,12 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		//*/
+
+        /*
+        'msg'=>array(
+            'invite' => '3600',
+        ),
+        */
 	),
 
 	// application components
@@ -89,5 +95,21 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+        'MsgController' => array(
+            'type' => array(
+                '0' => 'normal',
+                '1' => 'reply'
+            ),
+        ),
+        'RelController' => array(
+            'type' => array(
+                '0' => 'None',
+                '1' => 'Inviting',
+                '2' => 'Agree',
+                '3' => 'Follow'
+            ),
+            'invite_interval' => 3600 * 24 * 30, // a month
+        ),
 	),
+
 );

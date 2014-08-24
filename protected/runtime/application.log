@@ -1,0 +1,2113 @@
+2014/08/14 14:53:29 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (101)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (101)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (101)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (101)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (101)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id`=1 LIMIT 1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (101)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (107)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id`=1 LIMIT 1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (107)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.ar.CActiveRecord] UserBaseinfo.findByPk()
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (113)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (113)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (113)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user_baseinfo` `t` WHERE `t`.`id`=1 LIMIT 1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (113)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.ar.CActiveRecord] Location.findByPk()
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (156)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (156)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (156)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_location` `t` WHERE `t`.`id`=1 LIMIT 1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (156)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.ar.CActiveRecord] Industry.findByPk()
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (163)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (163)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (163)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_industry` `t` WHERE `t`.`id`=1 LIMIT 1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/models/UserBaseinfo.php (163)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (116)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.ar.CActiveRecord] Profile.findAllByPk()
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (119)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (119)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (119)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/14 14:53:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_profile` `t` WHERE `t`.`id`=2
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/UserController.php (119)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:09 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:12 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:14 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:23 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 16:49:31 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/index.php (13)
+2014/08/20 17:37:14 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:37:14 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:37:14 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:37:51 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:37:51 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:37:51 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:03 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:03 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:03 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:17 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:17 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:17 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:35 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:35 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:38:35 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:43:02 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:43:02 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:43:02 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:43:02 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:43:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#4 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('msg/create')
+#5 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/myjober/api?r=msg/create&type=1
+---
+2014/08/20 17:43:02 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/20 17:51:27 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:27 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:27 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:27 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#4 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('msg/create')
+#5 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/myjober/api?r=msg/create&type=1
+---
+2014/08/20 17:51:27 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/20 17:51:40 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:40 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:40 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:53 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:53 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:53 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/20 17:51:53 [warning] [application] ErrorCode:0Error Message:Success
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (79)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/MsgController.php (69)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:15 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:17 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:28:58 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:10 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/21 09:29:11 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:49 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:25:52 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:31 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:39 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 17:26:40 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:08:31 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:08:31 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:08:31 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:08:31 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:08:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myjober/api?/msg
+---
+2014/08/23 18:08:31 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myjober/api?/msg
+---
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (2)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:09:12 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:09:25 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:25 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:25 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:25 [trace] [system.base.CModule] Loading "msg" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:25 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:09:25 [error] [exception.CException] exception 'CException' with message 'Alias "msg.MsgModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/jacky/Project/holdjobs/www_root/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/YiiBase.php(196): YiiBase::import('msg.MsgModule', true)
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CModule.php(282): YiiBase::createComponent('msg.MsgModule', 'msg', NULL, Array)
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(337): CModule->getModule('msg')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('msg')
+#4 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('msg')
+#5 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/myjober/api?r=msg
+---
+2014/08/23 18:09:25 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:15:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('msg')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myjober/api?r=msg
+---
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (2)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:15:19 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myjober/api?msg/create
+---
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (2)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:16:04 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myjober/api?/msg/create
+---
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (2)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:16:11 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myjober/api?/msg/create
+---
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (2)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/main.php (35)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/views/layouts/column1.php (6)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+2014/08/23 18:16:14 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (49)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/SiteController.php (36)
+2014/08/23 18:16:18 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:18 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:18 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:16:18 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:20:34 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:20:34 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:20:34 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:20:34 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:21:01 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:01 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:01 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:01 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:21:03 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:03 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:03 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:03 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:21:16 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:16 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:16 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:16 [error] [php] Use of undefined constant MT_MSG - assumed 'MT_MSG' (/Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/MsgController.php:41)
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(286): MsgController->runAction()
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(265): MsgController->runActionWithFilters()
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): MsgController->run()
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CWebApplication->run()
+REQUEST_URI=/myjober/api?r=msg/create&type=1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/MsgController.php (41)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:16 [trace] [system.CModule] Loading "errorHandler" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/MsgController.php (41)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:55 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:55 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:55 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:21:55 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:22:22 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:22:22 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:22:22 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:22:22 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:22:46 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:22:46 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:22:46 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:22:46 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:28:57 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:28:57 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:28:57 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:28:57 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (27)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (27)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:28:57 [error] [exception.CException] exception 'CException' with message 'MsgController and its behaviors do not have a method or closure named "_construct".' in /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php(27): CComponent->__call('_construct', Array)
+#1 /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php(27): CController->_construct()
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(359): Controller->__construct('msg', NULL)
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('msg/create')
+#4 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('msg/create')
+#5 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/myjober/api?r=msg/create&type=1
+---
+2014/08/23 18:28:57 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:29:28 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:29:28 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:29:28 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:29:28 [error] [php] Missing argument 1 for CController::__construct(), called in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php on line 27 and defined (/Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php:110)
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#3 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CWebApplication->run()
+REQUEST_URI=/myjober/api?r=msg/create&type=1
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (27)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:29:28 [trace] [system.CModule] Loading "errorHandler" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/Controller.php (27)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:35 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:35 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:35 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:35 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/MsgController.php (38)
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:35 [error] [exception.CException] exception 'CException' with message 'Property "MsgController.config" is not defined.' in /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/jacky/Project/holdjobs/www_root/myjober/protected/controllers/MsgController.php(38): CComponent->__get('config')
+#1 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/actions/CInlineAction.php(49): MsgController->actionCreate()
+#2 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#6 /Users/jacky/Project/holdjobs/www_root/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('msg/create')
+#7 /Users/jacky/Project/holdjobs/www_root/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/jacky/Project/holdjobs/www_root/myjober/api.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/myjober/api?r=msg/create&type=1
+---
+2014/08/23 18:30:35 [trace] [system.CModule] Loading "errorHandler" application component
+2014/08/23 18:30:52 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:52 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:52 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:30:52 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/23 18:31:42 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:31:42 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:31:42 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/23 18:31:42 [warning] [application] ErrorCode:1000001Error Message:Invalid parameter
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (69)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/ErrorHelper.php (74)
+in /Users/jacky/Project/holdjobs/www_root/myjober/protected/components/DataHelper.php (90)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_session`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_session`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:07 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_session`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_session`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:14 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.CModule] Loading "log" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.CModule] Loading "request" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.base.CModule] Loading "gii" module
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.CModule] Loading "user" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.CModule] Loading "session" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.CModule] Loading "db" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_session`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_session`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_company_type`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_education`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_experience`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_company`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_follow_ship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_functype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_indtype`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_industry`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_invite`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_job`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_location`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_msg`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_profile`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_relationship`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_baseinfo`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user_browser`
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:16 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:16 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:16 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)
+2014/08/24 10:56:16 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jacky/Project/holdjobs/www_root/myjober/api.php (13)

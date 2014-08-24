@@ -8,11 +8,10 @@ CREATE TABLE IF NOT EXISTS `tbl_user`(
     `cookie` VARCHAR(256) NOT NULL DEFAULT '',
     `token` VARCHAR(256) NOT NULL DEFAULT '',
     `salt`  VARCHAR(64) NOT NULL DEFAULT '',
-    `last_login` INT NOT NULL DEFAULT '',
+    `last_login` INT NOT NULL DEFAULT '0',
     `type` INT NOT NULL DEFAULT '0' COMMENT 'user type: 0-normal, 1-enterprise, 2-hunter, 3-admin',
     `reg_from` INT NOT NULL DEFAULT '0' COMMENT 'user registration original, 0-local,1-weixin,2-weibo,3-qq,4-baidu',
     `base_info` INT NOT NULL DEFAULT '0' COMMENT '基本信息 tbl_user_baseinfo表的id',
-    
     `profile` VARCHAR(256) NOT NULL DEFAULT '' COMMENT '简历信息 tbl_profile表的id list',
     `create_time` INT NOT NULL DEFAULT '0',
     `update_time` INT NOT NULL DEFAULT '0',
@@ -90,32 +89,43 @@ CREATE TABLE IF NOT EXISTS `tbl_experience` (
 # /*---职位信息表---*/
 DROP TABLE IF EXISTS `tbl_job`;
 CREATE TABLE IF NOT EXISTS `tbl_job`(
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `title` varchar(128) NOT NULL DEFAULT '',
-    `company_id` INT NOT NULL DEFAULT '0' COMMENT 'enterprise id',
-    `industry` INT NOT NULL DEFAULT '0',
-    `publish_time` INT NOT NULL DEFAULT '0',
-    `location` INT NOT NULL DEFAULT '0',
-    `description` varchar(2048) NOT NULL DEFAULT '',
-    `responsibility` VARCHAR(2048) NOT NULL DEFAULT '',
-    `keyword` VARCHAR(256) NOT NULL DEFAULT '',
-    `create_time` INT NOT NULL DEFAULT '0',
-    `update_time` INT NOT NULL DEFAULT '0',
-    `status` INT NOT NULL DEFAULT '0'
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `title` varchar(128) NOT NULL DEFAULT '' COMMENT '职位名称',
+  `company_id` INT NOT NULL DEFAULT '0' COMMENT '公司id',
+  `industry` INT NOT NULL DEFAULT '0' COMMENT '行业id',
+  `functype` INT NOT NULL DEFAULT '0' COMMENT '职位类别,职能id',
+  `department` VARCHAR (64) NOT NULL DEFAULT '' COMMENT '部门',
+  `m_ratio` TINYINT NOT NULL DEFAULT '0' COMMENT '岗位管理比重:1-15 percents,2-30 percents,3-50 percents',
+  `location` INT NOT NULL DEFAULT '0',
+  `degree` INT NOT NULL DEFAULT '0',
+  `hc` INT NOT NULL DEFAULT '0' COMMENT '招聘人数',
+  `age` VARCHAR (8) NOT NULL DEFAULT '' COMMENT '年龄范围',
+  `description` VARCHAR (1024) NOT NULL DEFAULT '',
+  `responsibility` VARCHAR(1024) NOT NULL DEFAULT '',
+  `other` VARCHAR (256) NOT NULL DEFAULT '' COMMENT '补充说明',
+  `keyword` VARCHAR(256) NOT NULL DEFAULT '',
+  `filter` VARCHAR (128) NOT NULL DEFAULT '' COMMENT '筛选条件,6个关键字,以,分割',
+  `publish_time` INT NOT NULL DEFAULT '0',
+  `create_time` INT NOT NULL DEFAULT '0',
+  `update_time` INT NOT NULL DEFAULT '0',
+  `status` INT NOT NULL DEFAULT '0'
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 # ---企业信息表---
 DROP TABLE IF EXISTS `tbl_company`;
 CREATE TABLE IF NOT EXISTS `tbl_company` (
     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `name` VARCHAR(32) NOT NULL,
-#     `password` VARCHAR(64) NOT NULL,
-#     `title` VARCHAR(128) NOT NULL,
-    `type` INT NOT NULL DEFAULT '3',
-    `industry` INT NOT NULL DEFAULT '0',
-    `scale` INT NOT NULL DEFAULT '0' COMMENT '0:~100 people;1:100~500 people;2:500~1000 people;3:1000~',
-    `summary` VARCHAR(512) NOT NULL DEFAULT '',
-    `description` VARCHAR(2048) NOT NULL DEFAULT '',
+    `name` VARCHAR(64) NOT NULL COMMENT '公司名称,必需',
+    `type` INT NOT NULL DEFAULT '3' COMMENT '性质',
+    `industry` INT NOT NULL DEFAULT '0' COMMENT '行业',
+    `scale` INT NOT NULL DEFAULT '0' COMMENT '规模 0:~100 people;1:100~500 people;2:500~1000 people;3:1000~',
+    `homepage` VARCHAR(128) NOT NULL DEFAULT '' COMMENT '主页',
+    `desc` VARCHAR(2048) NOT NULL DEFAULT '' COMMENT '简介',
+    `address` VARCHAR (256) NOT NULL DEFAULT '' COMMENT '公司地址',
+    `contact` VARCHAR (32) NOT NULL DEFAULT '' COMMENT '联系人',
+    `phone` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '联系电话,座机',
+    `mobile` VARCHAR (20) NOT NULL DEFAULT '' COMMENT '联系人手机',
+    `email` VARCHAR(256) NOT NULL DEFAULT '' COMMENT '简历邮箱',
     `create_time` INT NOT NULL DEFAULT '0',
     `update_time` INT NOT NULL DEFAULT '0',
     `status` INT NOT NULL DEFAULT '0'
@@ -130,11 +140,7 @@ CREATE TABLE IF NOT EXISTS `tbl_company_type` (
     `update_time` INT NOT NULL DEFAULT '0',
     `status` INT NOT NULL DEFAULT '0'
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
-INSERT INTO `tbl_company_type` (`name`) VALUES ('国企');
-INSERT INTO `tbl_company_type` (`name`) VALUES ('央企');
-INSERT INTO `tbl_company_type` (`name`) VALUES ('私企');
-INSERT INTO `tbl_company_type` (`name`) VALUES ('外企(欧美)');
-INSERT INTO `tbl_company_type` (`name`) VALUES ('外企(日韩)');
+
 # ----------------------
 
 DROP TABLE IF EXISTS `tbl_industry`;
@@ -149,12 +155,12 @@ INSERT INTO `tbl_industry` (`name`) VALUES ('电子');
 
 DROP TABLE IF EXISTS `tbl_location`;
 CREATE TABLE IF NOT EXISTS `tbl_location` (
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `name` VARCHAR(32) NOT NULL DEFAULT ''
+    `id` INT NOT NULL PRIMARY KEY,
+    `name` VARCHAR(32) NOT NULL DEFAULT '',
+    `create_time` INT NOT NULL DEFAULT '0',
+    `update_time` INT NOT NULL DEFAULT '0',
+    `status` INT NOT NULL DEFAULT '0'
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
-INSERT INTO `tbl_location` (`name`) VALUES ('北京');
-INSERT INTO `tbl_location` (`name`) VALUES ('上海');
-INSERT INTO `tbl_location` (`name`) VALUES ('深圳');
 
 # ---用户浏览过的职位信息----
 DROP TABLE IF EXISTS `tbl_user_browser`;
@@ -205,4 +211,72 @@ CREATE TABLE IF NOT EXISTS `tbl_follow_industry` (
   `update_time` INT NOT NULL DEFAULT '0',
   `status` INT NOT NULL DEFAULT '0'
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `tbl_functype`;
+CREATE TABLE IF NOT EXISTS `tbl_functype` (
+  `id` INT NOT NULL PRIMARY KEY,
+  `name` VARCHAR (64) NOT NULL DEFAULT '',
+  `e_name` VARCHAR (64) NOT NULL DEFAULT '',
+  `create_time` INT NOT NULL DEFAULT '0',
+  `update_time` INT NOT NULL DEFAULT '0',
+  `status` INT NOT NULL DEFAULT '0'
+)ENGINE = InnoDB DEFAULT CHARSET =utf8;
+
+DROP TABLE IF EXISTS `tbl_indtype`;
+CREATE TABLE IF NOT EXISTS `tbl_indtype` (
+  `id` INT NOT NULL PRIMARY KEY,
+  `name` VARCHAR (64) NOT NULL DEFAULT '',
+  `e_name` VARCHAR (64) NOT NULL DEFAULT '',
+  `create_time` INT NOT NULL DEFAULT '0',
+  `update_time` INT NOT NULL DEFAULT '0',
+  `status` INT NOT NULL DEFAULT '0'
+)ENGINE = InnoDB DEFAULT CHARSET =utf8;
+
+DROP TABLE IF EXISTS `tbl_invite`;
+CREATE TABLE IF NOT EXISTS `tbl_invite` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  `i_state` INT NOT NULL DEFAULT '0',
+  `sid` INT NOT NULL DEFAULT '0',
+  `rid` INT NOT NULL DEFAULT '0',
+  `create_time` INT NOT NULL DEFAULT '0',
+  `update_time` INT NOT NULL DEFAULT '0',
+  `status` INT NOT NULL DEFAULT '0'
+)ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+
+DROP TABLE IF EXISTS `tbl_msg`;
+CREATE TABLE IF NOT EXISTS `tbl_msg` (
+  `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `sid` INT NOT NULL DEFAULT '0' COMMENT '发送者id',
+  `rid` INT NOT NULL DEFAULT '0' COMMENT '接收者id',
+  `session_id` VARCHAR (64) NOT NULL DEFAULT '0' COMMENT '会话id,由sid，rid生成,用于检索对话',
+#   `tid` INT NOT NULL DEFAULT '0' COMMENT 'target id,回复的消息id,用于邀请流程',
+  `type` INT NOT NULL DEFAULT '0' COMMENT '类型:0-普通,1-消息/邀请,2-回复',
+  `msg` VARCHAR (512) NOT NULL DEFAULT '',
+  `create_time` INT NOT NULL DEFAULT '0',
+  `update_time` INT NOT NULL DEFAULT '0',
+  `status` INT NOT NULL DEFAULT '0'
+)ENGINE =InnoDB DEFAULT CHARSET = utf8 COMMENT '消息实体';
+
+/*回话表,sid+rid唯一标识一个会话,sid必须是企业用户,rid必须是普通用户,当state为ESTABLISH状态时,才能开始msg通话*/
+DROP TABLE IF EXISTS `tbl_session`;
+CREATE TABLE IF NOT EXISTS `tbl_session` (
+  `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+  `sid` INT NOT NULL COMMENT '',
+  `rid` INT NOT NULL COMMENT '',
+  `state` INT NOT NULL COMMENT '',
+  `create_time` INT NOT NULL DEFAULT '0' COMMENT '',
+  `update_time` INT NOT NULL DEFAULT '0' COMMENT '',
+  `status` INT NOT NULL DEFAULT '0'
+)ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+DROP TABLE IF EXISTS `tbl_relationship`;
+CREATE TABLE IF NOT EXISTS `tbl_relationship` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `uid1` INT NOT NULL DEFAULT '0' COMMENT '',
+  `uid2` INT NOT NULL DEFAULT '0' COMMENT '',
+  `state` INT NOT NULL DEFAULT '0' COMMENT '',
+  KEY (`uid1`),
+  KEY (`uid2`)
+)ENGINE = InnoDB DEFAULT CHARSET = utf8;
 

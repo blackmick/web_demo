@@ -21,6 +21,14 @@
  */
 class User extends CActiveRecord
 {
+    // User type
+    const UT_NORMAL     = 0;
+    const UT_ENTERPRISE = 1;
+    const UT_HUNTER     = 2;
+    const UT_ADMIN      = 3;
+
+
+    const TOKEN_PERIOD  = 3600;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -122,6 +130,10 @@ class User extends CActiveRecord
     {
         Yii::log("Get Token:".$token, CLogger::LEVEL_INFO);
         $savedToken = $this->getAttribute('token');
+        $last_login = $this->getAttribute('last_login');
+        if (time()-$last_login > self::TOKEN_PERIOD){
+            return false;
+        }
         return $savedToken == $token;
     }
 

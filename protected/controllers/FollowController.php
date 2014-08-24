@@ -73,6 +73,10 @@ class FollowController extends SafeController
         ErrorHelper::Success();
     }
 
+    /*
+     * 普通用户的关注列表
+     *
+     */
     public function actionList(){
         $opModel = $this->validatePrivilege();
 

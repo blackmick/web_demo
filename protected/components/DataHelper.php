@@ -97,7 +97,9 @@ class DataHelper
         if (!$value && !is_string($value)){
             ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PARAM);
         }
-        return $value;
+        $purifier = new CHtmlPurifier();
+        $val = $purifier->purify($value);
+        return $val;
     }
 
 }

@@ -6,7 +6,14 @@
  * Time: 上午11:18
  */
 
+/**
+ * Class UbiController 用户基本信息
+ */
+
 class UbiController extends SafeController{
+    /**
+     * 创建用户基本信息,只能用户自己有权限
+     */
     public function actionUpdate(){
         $opModel = $this->validatePrivilege();
 
@@ -52,7 +59,14 @@ class UbiController extends SafeController{
         ErrorHelper::Success();
     }
 
-    public function actionView(){
+    /**
+     *
+     */
+    public function actionDelete(){
+
+    }
+
+    public function actionDetail(){
 
     }
 }

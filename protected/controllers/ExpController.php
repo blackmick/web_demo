@@ -6,6 +6,10 @@
  * Time: 下午3:42
  */
 
+/**
+ * Class ExpController
+ * 工作经历,只针对普通用户创建
+ */
 class ExpController extends SafeController{
 
     /**

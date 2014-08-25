@@ -22,7 +22,10 @@ class ErrorHelper
     const ERR_UBI_NOT_FOUND         = 2000007;
     const ERR_LOGIN_FAIL            = 2000008;
 
-    const ERR_INVALID_PROFILE        = 3000001;
+    const ERR_INVALID_PROFILE       = 3000001;
+
+    const ERR_DUP_COMPANY           = 4000001;
+    const ERR_COMPANY_NOT_FOUND     = 4000002;
 
 
 
@@ -41,6 +44,10 @@ class ErrorHelper
         self::ERR_DUP_USER => 'username is duplicated',
         self::ERR_DUP_USER_BASE_INFO => 'user base info is duplicated',
         self::ERR_UBI_NOT_FOUND => 'user base info not found',
+
+        self::ERR_DUP_COMPANY => 'company is duplicated by name',
+        self::ERR_COMPANY_NOT_FOUND => 'company not found',
+
     );
 
     public static function Error($errCode, $errParams = null)
@@ -75,7 +82,12 @@ class ErrorHelper
         exit();
     }
 
-    public static function Success(){
-        self::Error(self::ERR_OK);
+    public static function Success($data = null){
+        $output['status'] = self::ERR_OK;
+        $output['error message'] = self::$ErrorCodeMap[self::ERR_OK];
+        if ($data){
+            $output['data'] = $data;
+        }
+        echo json_encode($output);
     }
 }

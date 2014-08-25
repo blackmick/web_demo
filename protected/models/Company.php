@@ -1,16 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "{{enterprise}}".
+ * This is the model class for table "{{company}}".
  *
- * The followings are the available columns in table '{{enterprise}}':
+ * The followings are the available columns in table '{{company}}':
  * @property integer $id
- * @property string $name
- * @property string $password
+ * @property string  $name
  * @property integer $type
  * @property integer $industry
- * @property string $summary
- * @property string $homepage
+ * @property integer $scale
+ * @property string  $homepage
+ * @property string  $desc
+ * @property string  $address
+ * @property string  $contact
+ * @property string  $phone
+ * @property string  $mobile
+ * @property string  $email
+ * @property integer $create_time
+ * @property integer $update_time
+ * @property integer $status
+ *
  */
 class Company extends CActiveRecord
 {
@@ -30,14 +39,19 @@ class Company extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('password', 'required'),
-			array('type, industry', 'numerical', 'integerOnly'=>true),
+			array('name', 'required'),
+			array('type, industry, scale', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>64),
-			array('password', 'length', 'max'=>128),
-			array('summary, homepage', 'length', 'max'=>512),
-			// The following rule is used by search().
+            array('homepage', 'length', 'max'=>128),
+            array('desc', 'length', 'max'=>2048),
+            array('address', 'length', 'max'=>256),
+            array('contact', 'length', 'max'=>32),
+            array('phone', 'length', 'max'=>20),
+            array('mobile', 'length', 'max'=>20),
+            array('email', 'length', 'max'=>256),
+            // The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, password, type, industry, sumary, homepage', 'safe', 'on'=>'search'),
+			array('id, name, type, industry', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,10 +74,8 @@ class Company extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'password' => 'Password',
 			'type' => 'Type',
 			'industry' => 'Industry',
-			'sumary' => 'Sumary',
 			'homepage' => 'Homepage',
 		);
 	}
@@ -88,11 +100,9 @@ class Company extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('password',$this->password,true);
 		$criteria->compare('type',$this->type);
 		$criteria->compare('industry',$this->industry);
-		$criteria->compare('sumary',$this->sumary,true);
-		$criteria->compare('homepage',$this->homepage,true);
+//		$criteria->compare('homepage',$this->homepage,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -109,6 +119,18 @@ class Company extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function beforeSave(){
+        if (parent::beforeSave()){
+            if ($this->isNewRecord){
+                $this->create_time = $this->update_time = time();
+            }else{
+                $this->update_time = time();
+            }
+            return true;
+        }
+        return false;
+    }
 
     public function getData(){
         $attr = $this->getAttributes();

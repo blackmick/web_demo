@@ -5,16 +5,16 @@
  *
  * The followings are the available columns in table '{{user}}':
  * @property integer $id
- * @property string $username
- * @property string $password
- * @property string $cookie
- * @property string $salt
- * @property string $token
+ * @property string  $username
+ * @property string  $password
+ * @property string  $cookie
+ * @property string  $salt
+ * @property string  $token
  * @property integer $last_login
  * @property integer $type
  * @property integer $reg_from 0-normal
  * @property integer $base_info
- * @property string $profile
+ * @property string  $profile
  * @property integer $create_time
  * @property integer $update_time
  * @property integer $status

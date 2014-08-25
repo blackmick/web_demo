@@ -6,22 +6,25 @@
  * Time: 下午1:11
  */
 
+/**
+ * Class ProfileController 普通用户的简历信息
+ */
+
 class ProfileController extends SafeController{
+
+    /**
+     * 创建简历
+     */
     public function actionCreate()
     {
         $operatorModel = $this->validatePrivilege();
+        if($operatorModel->type != User::UT_NORMAL){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE,'not the user own');
+        }
 
         $user_id = Yii::app()->request->getParam('user_id');
-//        $uid = Yii::app()->request->getParam('uid');
-//        $token = Yii::app()->request->getParam('token');
         $language = DataHelper::getStrReq('language');
         $keyword = DataHelper::getStrReq('keyword');
-
-//        $operatorModel = User::model()->findByPk($uid);
-//        if (!$operatorModel)
-//            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_USER);
-//        if (!$operatorModel->validateToken($token))
-//            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_TOKEN);
 
         $userModel = User::model()->findByPk($user_id);
         if (!$userModel){
@@ -55,6 +58,10 @@ class ProfileController extends SafeController{
         ErrorHelper::Success();
     }
 
+    /**
+     * 更新简历
+     * TODO not finished.
+     */
     public function actionUpdate(){
         $uid = Yii::app()->request->getParam('uid');
         $token = Yii::app()->request->getParam('token');
@@ -65,6 +72,9 @@ class ProfileController extends SafeController{
         }
     }
 
+    /**
+     * 删除简历
+     */
     public function actionDelete(){
         $this->validatePrivilege();
 
@@ -92,5 +102,28 @@ class ProfileController extends SafeController{
         $profileModel->delete();
 
         ErrorHelper::Success();
+    }
+
+    /**
+     * 简历详细信息
+     */
+    public function actionDetail(){
+        $user = $this->validatePrivilege();
+        $profile = $this->loadModel(DataHelper::getIntReq('id'));
+
+        if ($user->type != User::UT_NORMAL || $user->type != $profile->uid){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE);
+        }
+
+        $data = $profile->getData();
+        $this->render(null, $data, false, 'data');
+    }
+
+    public function loadModel($id)
+    {
+        $model=Profile::model()->findByPk($id);
+        if($model===null)
+            throw new CHttpException(404,'The requested page does not exist.');
+        return $model;
     }
 }

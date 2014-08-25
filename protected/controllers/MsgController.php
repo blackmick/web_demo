@@ -66,7 +66,7 @@ class MsgController extends SafeController{
      * @param
      * @param
      * @param
-     * 
+     *
      */
     private function sendMsg(){
 
@@ -89,13 +89,16 @@ class MsgController extends SafeController{
             ErrorHelper::Fatal(ErrorHelper::ERR_INTERNAL_ERROR);
         }
 
-        //$msg = DataHelper::getStrReq('msg');
+        $msg = DataHelper::getStrReq('msg');
+        if (!empty($msg) && !in_array($msg, $this->config['invite_msg'])){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PARAM, 'msg');
+        }
 
         $session = new Session();
 
         $session->sid = $sender->id;
         $session->rid = $receiver->id;
-        //$session->msg = $msg;
+        $session->msg = $msg;
         $session->state = Session::SS_INVITING;
 
         $isOk = $session->save();
@@ -121,14 +124,12 @@ class MsgController extends SafeController{
 
         $lastSession = Session::getLastSession($sender, $receiver);
 
-        if (!$lastSession || $lastSession->state != Session::SS_ESTABLISHED)
-        {
+        if (!$lastSession || $lastSession->state != Session::SS_ESTABLISHED){
             return true;
         }
 
-        if ($lastSession->state == Session::SS_INVITING &&
-            (time() - $lastSession->create_time) > $this->config['invite_internal'])
-        {
+        if ($lastSession->state != Session::SS_ESTABLISHED &&
+            (time() - $lastSession->create_time) > $this->config['invite_internal']){
             return true;
         }
 

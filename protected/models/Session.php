@@ -8,6 +8,7 @@
  * @property integer $sid
  * @property integer $rid
  * @property integer $state
+ * @property string  $msg
  * @property integer $create_time
  * @property integer $update_time
  * @property integer $status

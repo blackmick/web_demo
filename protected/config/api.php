@@ -100,6 +100,14 @@ return array(
                 '0' => 'normal',
                 '1' => 'reply'
             ),
+
+            'invite_interval' => 60,
+
+            'invite_msg' => array(
+                'test1',
+                'test2',
+                'test3'
+            ),
         ),
         'RelController' => array(
             'type' => array(

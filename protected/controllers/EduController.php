@@ -6,7 +6,13 @@
  * Time: 下午3:25
  */
 
-class EduController extends Controller{
+/**
+ * Class EduController 教育经历，只针对普通用户
+ */
+class EduController extends SafeController{
+    /**
+     * 创建教育信息
+     */
     public function actionCreate(){
         $user_id = DataHelper::getIntReq('user_id');
         $uid = DataHelper::getIntReq('uid');
@@ -71,4 +77,23 @@ class EduController extends Controller{
             ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, serialize($eduModel->getErrors()));
         }
     }
+
+    public function actionDetail(){
+        $user = $this->validatePrivilege();
+        $edu = $this->loadModel(DataHelper::getIntReq('id'));
+        if ($user->type != User::UT_NORMAL || $user->id != $edu->uid){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE,'not the same user');
+        }
+        $data = $edu->getData();
+        $this->render(null, $data, false, 'data');
+    }
+
+    public function loadModel($id)
+    {
+        $model=Education::model()->findByPk($id);
+        if($model===null)
+            throw new CHttpException(404,'The requested page does not exist.');
+        return $model;
+    }
+
 }

@@ -1,175 +1,187 @@
 <?php
 
-class EnterpriseController extends Controller
+class CompanyController extends SafeController
 {
 	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
-	public $layout='//layouts/column2';
-
-	/**
-	 * @return array action filters
-	 */
-	public function filters()
-	{
-		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
-		);
-	}
-
-	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
-
-	/**
-	 * Displays a particular model.
-	 * @param integer $id the ID of the model to be displayed
-	 */
-	public function actionView($id)
-	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
-
-	/**
-	 * Creates a new model.
-	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 * 创建企业数据,只有管理员能创建企业数据
+	 *
 	 */
 	public function actionCreate()
 	{
-		$model=new Enterprise;
+        $user = $this->validatePrivilege();
+        if ($user->type != User::UT_ADMIN){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE, 'create company');
+        }
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+        $company = $this->createCompany();
 
-		if(isset($_POST['Enterprise']))
-		{
-			$model->attributes=$_POST['Enterprise'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+        $oData['id'] = $company->id;
+        ErrorHelper::Success($oData);
 	}
 
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
+    public function actionDetail(){
+        $user = $this->validatePrivilege();
+        if ($user->type > 3){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE);
+        }
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+        $company = Company::model()->findByPk(DataHelper::getIntReq('id'));
+        $data[] = $company->getData();
+        $this->render(null, $data, false, 'data');
+    }
 
-		if(isset($_POST['Enterprise']))
-		{
-			$model->attributes=$_POST['Enterprise'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
+    public function actionList(){
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+    }
+
+    public function actionSearch(){
+        $user = $this->validatePrivilege();
+        $type = DataHelper::getIntReq('');
+        $keyword = DataHelper::getStrReq('kw');
+
+//        $data = $this->search();
+//        $this->render(NULL, $data, false, 'data');
+    }
+
+	public function actionUpdate(){
+        $user = $this->validatePrivilege();
+        if ($user->type != User::UT_ADMIN){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE, 'create company');
+        }
+        $company = $this->updateCompany();
+
+        $data = $company->getData();
+        ErrorHelper::Success($data);
 	}
 
-	/**
-	 * Deletes a particular model.
-	 * If deletion is successful, the browser will be redirected to the 'admin' page.
-	 * @param integer $id the ID of the model to be deleted
-	 */
-	public function actionDelete($id)
-	{
-		$this->loadModel($id)->delete();
+	public function actionDelete(){
+        $admin = $this->validatePrivilege();
+        if ($admin->type != User::UT_ADMIN){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE,'not admin');
+        }
+        $this->loadModel(DataHelper::getIntReq('id'))->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+        ErrorHelper::Success();
 	}
 
-	/**
-	 * Lists all models.
-	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Enterprise');
-		$this->render('index',
-            array(
-			    'dataProvider'=>$dataProvider
-		        )
-        );
-	}
+    /**
+     * 企业用户关联到该企业
+     * @param uid
+     * @param token
+     * @param cid
+     *
+     */
+    public function actionAssociate(){
+        $admin = $this->validatePrivilege();
+        if ($admin->type != User::UT_ADMIN){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE, 'not admin');
+        }
 
-	/**
-	 * Manages all models.
-	 */
-	public function actionAdmin()
-	{
-		$model=new Enterprise('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Enterprise']))
-			$model->attributes=$_GET['Enterprise'];
+        $user = User::model()->findByPk(DataHelper::getIntReq('user_id'));
+        $company = Company::model()->findByPk(DataHelper::getIntReq('cid'));
+        if (!$user || !$company){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INTERNAL_ERROR);
+        }
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
-	}
+        if ($user->type != User::UT_ENTERPRISE){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE, 'user type is not company');
+        }
 
-	/**
-	 * Returns the data model based on the primary key given in the GET variable.
-	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer $id the ID of the model to be loaded
-	 * @return Enterprise the loaded model
-	 * @throws CHttpException
-	 */
+        $user->profile = $company->id;
+        $isOk = $user->save();
+        if (!$isOk){
+            ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'user save fail.'.json_encode($user->getErrors()));
+        }
+
+        ErrorHelper::Success();
+    }
+
 	public function loadModel($id)
 	{
-		$model=Enterprise::model()->findByPk($id);
+		$model=Company::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
 
-	/**
-	 * Performs the AJAX validation.
-	 * @param Enterprise $model the model to be validated
-	 */
-	protected function performAjaxValidation($model)
-	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='enterprise-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
+    private function createCompany(){
+        $name = DataHelper::getStrReq('name');
+        $type = DataHelper::getIntReq('type');
+        $indtype = DataHelper::getIntReq('indtype');
+        $scale  = DataHelper::getIntReq('scale');
+        $homepage = DataHelper::getStrReq('homepage');
+        $desc = DataHelper::getStrReq('desc');
+        $address = DataHelper::getStrReq('address');
+        $contact = DataHelper::getStrReq('contact');
+        $phone = DataHelper::getStrReq('phone');
+        $mobile = DataHelper::getStrReq('mobile');
+        $email = DataHelper::getStrReq('email');
+
+        $company = Company::model()->find("name = '${name}' and status = '0'");
+        if ($company){
+            ErrorHelper::Fatal(ErrorHelper::ERR_DUP_COMPANY);
+        }
+
+        $company = new Company();
+        $company->name = $name;
+        $company->type = $type;
+        $company->industry = $indtype;
+        $company->scale = $scale;
+        $company->homepage = $homepage;
+        $company->desc = $desc;
+        $company->address = $address;
+        $company->contact = $contact;
+        $company->phone = $phone;
+        $company->mobile = $mobile;
+        $company->email = $email;
+
+        $isOk = $company->save();
+        if (!$isOk){
+            ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'create company fail.'.json_encode($company->getErrors()));
+        }
+
+        return $company;
+    }
+
+    private function updateCompany(){
+        $id = DataHelper::getIntReq('id');
+        $name = DataHelper::getStrReq('name');
+        $type = DataHelper::getIntReq('type');
+        $indtype = DataHelper::getIntReq('indtype');
+        $scale  = DataHelper::getIntReq('scale');
+        $homepage = DataHelper::getStrReq('homepage');
+        $desc = DataHelper::getStrReq('desc');
+        $address = DataHelper::getStrReq('address');
+        $contact = DataHelper::getStrReq('contact');
+        $phone = DataHelper::getStrReq('phone');
+        $mobile = DataHelper::getStrReq('mobile');
+        $email = DataHelper::getStrReq('email');
+
+        $company = Company::model()->findByPk($id);
+        if (!$company){
+            ErrorHelper::Fatal(ErrorHelper::ERR_COMPANY_NOT_FOUND);
+        }
+
+        $company->name = $name;
+        $company->type = $type;
+        $company->industry = $indtype;
+        $company->scale = $scale;
+        $company->homepage = $homepage;
+        $company->desc = $desc;
+        $company->address = $address;
+        $company->contact = $contact;
+        $company->phone = $phone;
+        $company->mobile = $mobile;
+        $company->email = $email;
+
+        $isOk = $company->save();
+        if (!$isOk){
+            ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'create company fail.'.json_encode($company->getErrors()));
+        }
+
+        return $company;
+
+    }
+
+    private function setCompany($company){}
 }

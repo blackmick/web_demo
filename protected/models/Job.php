@@ -5,15 +5,25 @@
  *
  * The followings are the available columns in table '{{job}}':
  * @property integer $id
- * @property string $title
- * @property integer $e_id
- * @property integer $create_time
+ * @property string  $title
+ * @property integer $company_id
+ * @property integer $industry
+ * @property integer $functype
+ * @property string  $department
+ * @property integer $m_ratio
+ * @property integer $location
+ * @property integer $degree
+ * @property integer $hc
+ * @property string  $age
+ * @property string  $description
+ * @property string  $responsibility
+ * @property string  $other
+ * @property string  $keyword
+ * @property string  $filter
  * @property integer $publish_time
- * @property integer $insert_time
+ * @property integer $create_time
  * @property integer $update_time
- * @property integer $location_id
- * @property integer $industry_id
- * @property string $description
+ * @property integer $status
  */
 class Job extends CActiveRecord
 {
@@ -33,7 +43,8 @@ class Job extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('e_id, create_time, publish_time, insert_time, update_time, location_id, industry_id', 'numerical', 'integerOnly'=>true),
+            array('title', 'required'),
+			array('company_id, create_time, publish_time, update_time, location, industry', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>128),
 			array('description', 'length', 'max'=>2048),
 			// The following rule is used by search().
@@ -61,14 +72,14 @@ class Job extends CActiveRecord
 		return array(
 			//'id' => 'ID',
 			'title' => '职位描述',
-			'e_id' => 'E',
+			'company_id' => '公司id',
 			'create_time' => 'Create Time',
 			'publish_time' => 'Publish Time',
-			'insert_time' => 'Insert Time',
 			'update_time' => 'Update Time',
-			'location_id' => 'Location',
-			'industry_id' => 'Industry',
+			'location' => 'Location',
+			'industry' => 'Industry',
 			'description' => 'Description',
+            'responsibility' => '职责描述',
 		);
 	}
 
@@ -92,14 +103,13 @@ class Job extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('e_id',$this->e_id);
-		$criteria->compare('create_time',$this->create_time);
+		$criteria->compare('e_id',$this->company_id);
+//		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('publish_time',$this->publish_time);
-		$criteria->compare('insert_time',$this->insert_time);
-		$criteria->compare('update_time',$this->update_time);
-		$criteria->compare('location_id',$this->location_id);
-		$criteria->compare('industry_id',$this->industry_id);
-		$criteria->compare('description',$this->description,true);
+//		$criteria->compare('update_time',$this->update_time);
+		$criteria->compare('location',$this->location);
+		$criteria->compare('industry',$this->industry);
+//		$criteria->compare('description',$this->description,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -116,6 +126,19 @@ class Job extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function beforeSave(){
+        if (parent::beforeSave()){
+            if ($this->isNewRecord){
+                $this->create_time = $this->update_time = time();
+            }else{
+                $this->update_time = time();
+            }
+            return true;
+        }
+
+        return false;
+    }
 
     public function getData(){
         $attr = $this->getAttributes();

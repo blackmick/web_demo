@@ -6,13 +6,16 @@
  * Time: 8:58
  */
 
-class UserController extends Controller
+class UserController extends SafeController
 {
-
+    /**
+     * 用户注册/创建
+     */
     public function actionCreate()
     {
         $username = Yii::app()->request->getParam('username');
         $password = Yii::app()->request->getParam('password');
+        $type = DataHelper::getIntReq('type');
         $userModel = User::model()->find("username='${username}' and status='0'");
 
         if ($userModel && $userModel->username === $username){
@@ -22,7 +25,8 @@ class UserController extends Controller
         $userModel = new User();
         $userModel->username = $username;
         $userModel->password = $password;
-        //$userModel->base_info = '0';
+        $userModel->type = $type;
+
         $isOk = $userModel->save();
         if (!$isOk) {
             ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL,
@@ -53,7 +57,11 @@ class UserController extends Controller
         ErrorHelper::Success();
     }
 
+    /**
+     * 用户登录,产生登录token
+     */
     public function actionLogin(){
+//        $begin = microtime(true);
         $username = DataHelper::getStrReq('username');
         $password = DataHelper::getStrReq('password');
 
@@ -63,10 +71,13 @@ class UserController extends Controller
             ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_USER);
         }
 
+//        $start_time = microtime(true);
         if (!$userModel->validatePassword($password))
         {
             ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PASSWORD);
         }
+//        $end_time = microtime(true);
+//        Yii::log('validate password uses: '.($end_time - $start_time).'s', CLogger::LEVEL_TRACE);
 
         $token = $userModel->genToken();
 
@@ -84,12 +95,27 @@ class UserController extends Controller
         $oData['token'] = $token;
 
         $this->render(null, $oData, false, 'data');
+//        $end = microtime(true);
+//        Yii::log('total time use: '.($end - $begin).'s', CLogger::LEVEL_TRACE);
     }
 
+    /**
+     * 用户登出，清除token
+     */
     public function actionLogout(){
+        $user = $this->validatePrivilege();
+        $user->token = '';
+        $isOk = $user->save();
+        if (!$isOk){
+            ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'save token fail.'.json_encode($user->getErrors()));
+        }
 
+        ErrorHelper::Success();
     }
 
+    /**
+     * 用户详细信息
+     */
     public function actionDetail(){
         $oData = array();
 
@@ -110,28 +136,36 @@ class UserController extends Controller
         }
 
         $userData = $userModel->getAttributes();
+
+        //get user base info.
         $userBaseModel = UserBaseinfo::model()->findByPk($userModel->base_info);
         if (!$userBaseModel)
             ErrorHelper::Fatal(ErrorHelper::ERR_NO_USER_BASE_INFO);
         $userData['base_info'] = $userBaseModel->getData();
 
-        $profileIds = $userModel->profile ? explode(',', $userModel->profile) : array();
-        $profileModel = Profile::model()->findAllByPk($profileIds);
+        //get profile for normal user.
+        if ($userModel->type != User::UT_ENTERPRISE) {
+            $profileIds = $userModel->profile ? explode(',', $userModel->profile) : array();
+            $profileModel = Profile::model()->findAllByPk($profileIds);
 //        var_dump($profileModel);
-        $proData = array();
-        if ($profileModel) {
-            foreach($profileModel as $profileM){
-                $profileData = $profileM->getData();
-                $proData[] = $profileData;
+            $proData = array();
+            if ($profileModel) {
+                foreach ($profileModel as $profileM) {
+                    $profileData = $profileM->getData();
+                    $proData[] = $profileData;
+                }
             }
+            $userData['profile data'] = $proData;
         }
-        $userData['profile data'] = $proData;
 
         $oData[] = $userData;
 
         $this->render(null, $oData, false, 'data');
     }
 
+    /**
+     * 更改用户信息,目前只针对password
+     */
     public function actionUpdate(){
         $this->layout = 'user_update';
         $userModel = new User();
@@ -144,15 +178,4 @@ class UserController extends Controller
             )
             ,false, 'page');
     }
-
-    public function actionCreateBaseInfo(){
-        $baseInfoModel = new UserBaseinfo();
-        $this->render('cbi',
-            $baseInfoModel,
-            false,
-            'page'
-        );
-    }
-
-
 }

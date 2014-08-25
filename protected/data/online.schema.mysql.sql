@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `tbl_user`(
     `type` INT NOT NULL DEFAULT '0' COMMENT 'user type: 0-normal, 1-enterprise, 2-hunter, 3-admin',
     `reg_from` INT NOT NULL DEFAULT '0' COMMENT 'user registration original, 0-local,1-weixin,2-weibo,3-qq,4-baidu',
     `base_info` INT NOT NULL DEFAULT '0' COMMENT '基本信息 tbl_user_baseinfo表的id',
-    `profile` VARCHAR(256) NOT NULL DEFAULT '' COMMENT '简历信息 tbl_profile表的id list',
+    `profile` VARCHAR(256) NOT NULL DEFAULT '' COMMENT '关联信息,当type==0时,是简历信息 tbl_profile表的id list;当type==1时,是关联的企业信息 tbl_company的id;type为其他值时应该为空',
     `create_time` INT NOT NULL DEFAULT '0',
     `update_time` INT NOT NULL DEFAULT '0',
     `status` INT NOT NULL DEFAULT '0'
@@ -265,6 +265,7 @@ CREATE TABLE IF NOT EXISTS `tbl_session` (
   `sid` INT NOT NULL COMMENT '',
   `rid` INT NOT NULL COMMENT '',
   `state` INT NOT NULL COMMENT '',
+  `msg` VARCHAR (256) NOT NULL DEFAULT '',
   `create_time` INT NOT NULL DEFAULT '0' COMMENT '',
   `update_time` INT NOT NULL DEFAULT '0' COMMENT '',
   `status` INT NOT NULL DEFAULT '0'

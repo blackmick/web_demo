@@ -35,6 +35,7 @@ class MsgController extends SafeController{
                 ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PARAM, 'type');
                 break;
         }
+        ErrorHelper::Success();
     }
 
     /*
@@ -48,6 +49,17 @@ class MsgController extends SafeController{
         $viewer = $this->validatePrivilege();
         $sql = 'SELECT cid FROM ${this->tableName()}';
         $msgModel = Msg::model()->findBySql($sql);
+    }
+
+    /**
+     * 获取某个session的所有会话信息
+     */
+    public function actionView(){
+
+    }
+
+    public function actionDetail(){
+
     }
 
     /*

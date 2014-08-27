@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table '{{follow_company}}':
  * @property integer $uid
- * @property string $company
+ * @property string  $list
  * @property integer $create_time
  * @property integer $update_time
  * @property integer $status
@@ -29,10 +29,10 @@ class FollowCompany extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('create_time, update_time, status', 'numerical', 'integerOnly'=>true),
-			array('company', 'length', 'max'=>255),
+			array('list', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('uid, company, create_time, update_time, status', 'safe', 'on'=>'search'),
+			array('uid, create_time, update_time, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,7 +54,7 @@ class FollowCompany extends CActiveRecord
 	{
 		return array(
 			'uid' => 'Uid',
-			'company' => 'Company',
+			'list' => 'Company',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
 			'status' => 'Status',
@@ -80,7 +80,7 @@ class FollowCompany extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('uid',$this->uid);
-		$criteria->compare('company',$this->company,true);
+//		$criteria->compare('company',$this->company,true);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
 		$criteria->compare('status',$this->status);

@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table '{{follow_job}}':
  * @property integer $uid
- * @property string $job
+ * @property string  $list
  * @property integer $create_time
  * @property integer $update_time
  * @property integer $status
@@ -29,10 +29,10 @@ class FollowJob extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('create_time, update_time, status', 'numerical', 'integerOnly'=>true),
-			array('job', 'length', 'max'=>255),
+			array('list', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('uid, job, create_time, update_time, status', 'safe', 'on'=>'search'),
+			array('uid, create_time, update_time, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -80,7 +80,7 @@ class FollowJob extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('uid',$this->uid);
-		$criteria->compare('job',$this->job,true);
+//		$criteria->compare('job',$this->job,true);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
 		$criteria->compare('status',$this->status);

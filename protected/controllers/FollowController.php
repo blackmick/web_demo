@@ -8,12 +8,19 @@
 
 class FollowController extends SafeController
 {
+    const FT_JOB = 1;
+    const FT_COMPANY = 2;
+    const FT_INDUSTRY = 3;
+
     private $_modelMap = array(
-        '1' => 'FollowJob',
-        '2' => 'FollowCompany',
-        '3' => 'FollowIndustry',
+        self::FT_JOB => 'FollowJob',
+        self::FT_COMPANY => 'FollowCompany',
+        self::FT_INDUSTRY => 'FollowIndustry',
     );
 
+    /**
+     * 创建一个follow关系
+     */
     public function actionCreate()
     {
         $opModel = $this->validatePrivilege();
@@ -91,21 +98,62 @@ class FollowController extends SafeController
         $condition = array("uid = '${user_id}'", "status = '0'");
         $attr = array('list');
         switch($type){
-            case 1:
+            case self::FT_JOB:
                 $followModel = FollowJob::model()->findAllByAttributes($attr, $condition);
                 break;
-            case 2:
+            case self::FT_COMPANY:
                 $followModel = FollowCompany::model()->findAllByAttributes($attr, $condition);
                 break;
-            case 3:
+            case self::FT_INDUSTRY:
                 $followModel = FollowIndustry::model()->findAllByAttributes($attr, $condition);
                 break;
             default:
+                ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PARAM, 'type');
                 break;
         }
 
         $oData = $followModel->getData();
 
         $this->render(null, $oData, false, 'data');
+    }
+
+    /**
+     * 检查用户是否关注了某xxx
+     * @param uid
+     * @param user_id
+     * @param target_id
+     * @param type
+     */
+    public function check($uid, $tid, $type){
+        $user = User::model()->findByPk($uid);
+        $target = $this->loadTarget($user->id, $type);
+        if ($user->type != User::UT_NORMAL){
+            ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PRIVILEGE);
+        }
+
+        $arr = explode(',', $target->list);
+        if (in_array($tid, $arr))
+            return true;
+        else
+            return false;
+    }
+
+    private function loadTarget($uid, $type){
+        switch($type){
+            case self::FT_JOB:
+                $target = FollowJob::model()->findByPk($uid);
+                break;
+            case self::FT_COMPANY:
+                $target = FollowCompany::model()->findByPk($uid);
+                break;
+            case self::FT_INDUSTRY:
+                $target = FollowIndustry::model()->findByPk($uid);
+                break;
+            default:
+                ErrorHelper::Fatal(ErrorHelper::ERR_INVALID_PARAM);
+                break;
+        }
+
+        return $target;
     }
 }

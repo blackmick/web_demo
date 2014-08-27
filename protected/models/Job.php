@@ -152,6 +152,10 @@ class Job extends CActiveRecord
     }
 
     public function getByIndustry($arrIndustry){
-
+        $oData = array();
+        $criteria = new CDbCriteria();
+        $count = $this->count($criteria);
+        $pages = new CPagination($count);
+        $pages->pageCount = 20;
     }
 }

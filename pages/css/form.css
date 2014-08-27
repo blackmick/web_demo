@@ -1,0 +1,13 @@
+[title]{
+    color: "red";
+}
+.create_form {
+    font-family: "Sans-serif";
+    align-content: center;
+    width: 200px;
+    height: 600px;
+    border : 10px;
+    padding: 20px;
+    background: darkgray;
+}
+

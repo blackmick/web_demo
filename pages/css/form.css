@@ -1,13 +1,19 @@
 [title]{
-    color: "red";
+    color: red;
 }
 .create_form {
-    font-family: "Sans-serif";
+    font-family: "Arial";
+    font-size: 14px;
     align-content: center;
     width: 200px;
-    height: 600px;
+    height: 800px;
     border : 10px;
     padding: 20px;
     background: darkgray;
+}
+
+.multitext{
+    height : 80px
+    
 }
 

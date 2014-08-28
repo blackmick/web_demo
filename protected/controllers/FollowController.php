@@ -123,6 +123,7 @@ class FollowController extends SafeController
      * @param user_id
      * @param target_id
      * @param type
+     * @return null
      */
     public function check($uid, $tid, $type){
         $user = User::model()->findByPk($uid);

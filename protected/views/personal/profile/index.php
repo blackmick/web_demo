@@ -5,32 +5,22 @@
  * Date: 14/10/29
  * Time: 下午4:12
  */
-
+$this->breadcrumbs = array('Home');
 ?>
 
-<?php
-$this->widget(
-    'zii.widgets.grid.CGridView',
-    array(
-        'dataProvider' => $user->getProfileList(),
-        'columns' => array(
-            array(
-                'header' => '简历名',
-                'value' => '$data->name',
-            ),
-            array(
-                'header' => '操作',
-                'class' => 'CButtonColumn',
-                'template' => '{view}{update}{delete}',
-            )
-        )
-    )
-);
+<div class="content-pannel">
+    <div id="head-icon" style="float: left">
+        <img src="images/Users.png" width="100px" height="100px"/>
+    </div>
+    <h style="float: left">姓名</h>
+    <input type="button" onclick="" value="修改个人简历" />
+    <p>头衔|公司</p>
+    <p>地址|行业|工作年限</p>
+</div>
+<div class="content-pannel">
 
-echo CHtml::button(
-    '添加',
-    array(
-        'onclick' => "location.href='".Yii::app()->createUrl('profile/create')."'",
-    )
-)
-?>
+个人信息摘要
+</div>
+<div class="content-pannel">
+推荐内容
+</div>

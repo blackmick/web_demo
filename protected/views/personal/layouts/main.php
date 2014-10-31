@@ -20,45 +20,59 @@
 
 <body>
 
+<div id="container">
+    <div id="header">
+        <!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->
+    </div><!-- header -->
+    <div id="mainmenu-bar">
+        <div id="mainmenu">
+            <!--		--><?php //$this->widget('zii.widgets.CMenu',array(
+            //			'items'=>array(
+            //				array('label'=>'主页', 'url'=>array('/site/index')),
+            //				array('label'=>'关于', 'url'=>array('/site/page', 'view'=>'about')),
+            //				array(
+            //                    'label'=>'登录',
+            //                    'url'=>array('/account/login'),
+            //                    'visible'=> (Yii::app()->user->isGuest || Yii::app()->user->getType() != 'personal')
+            //                ),
+            //                array(
+            //                    'label' => '账户管理('.Yii::app()->user->name.')',
+            //                    'url' =>array('/account/index'),
+            //                    'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'personal'),
+            //                ),
+            //			),
+            //		)); ?>
+        </div><!-- mainmenu -->
+    </div>
 <div class="container" id="page">
+    <div class="breadcrumbs" style="height: 32px">
+        	<?php if(isset($this->breadcrumbs)):?>
+        		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+        			'links'=>$this->breadcrumbs,
+        		)); ?><!-- breadcrumbs -->
+        	<?php endif?>
+    </div>
+    <div class="content-main">
+<!--        <div class="content-pannel">-->
+<!--            <div style="height: 30%;background: #F8F8F8">-->
+<!---->
+<!--            </div>-->
+<!--            <div style="height: 40%;background: #FCFCFC">-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="content-pannel">-->
+<!---->
+<!--        </div>-->
+<!--        <div class="content-pannel">-->
+<!--        </div>-->
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'主页', 'url'=>array('/site/index')),
-				array('label'=>'关于', 'url'=>array('/site/page', 'view'=>'about')),
-//				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array(
-                    'label'=>'登录',
-                    'url'=>array('/account/login'),
-                    'visible'=> (Yii::app()->user->isGuest || Yii::app()->user->getType() != 'personal')
-                ),
-                array(
-                    'label' => '账户管理('.Yii::app()->user->name.')',
-                    'url' =>array('/account/index'),
-                    'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'personal'),
-                ),
-//				array(
-//                    'label'=>'退出 ('.Yii::app()->user->name.')',
-//                    'url'=>array('/site/logout'),
-//                    'visible'=> (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'company')
-//                )
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
+        	<?php echo $content; ?>
+    </div>
+    <div class="content-sidebar">
+        sidebar
+    </div>
 
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
@@ -66,8 +80,9 @@
 		<?php echo Yii::powered(); ?>
         <?php echo Yii::getVersion(); ?>
 	</div><!-- footer -->
-
+<!---->
 </div><!-- page -->
+</div><!-- container -->
 
 </body>
 </html>

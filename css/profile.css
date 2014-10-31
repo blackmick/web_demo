@@ -1,0 +1,36 @@
+.header-container{
+    width:960px;
+    height:40px;
+    float:none;
+    background: #8a1f11;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.siderbar{
+    width:25%;
+    height:auto;
+    float:left;
+    background: #006600;
+}
+
+.content-container{
+    float:left;
+    background: #80CFFF;
+    width:70%
+}
+
+.footer-container{
+    clear:left;
+    width: 100%;
+    align-content: center;
+}
+
+.content-pannel{
+    width: 80%;
+    align-self: center;
+    clear:left;
+    color:#454545;
+    color:#f0f0f0;
+}

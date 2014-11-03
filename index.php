@@ -11,4 +11,6 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 require_once($yii);
 $g_App = Yii::createWebApplication($config);
+$g_App->setControllerPath($g_App->getBasePath().DIRECTORY_SEPARATOR.'controllers'.DIRECTORY_SEPARATOR.'guest');
+$g_App->setViewPath($g_App->getBasePath().DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'guest');
 $g_App->run();

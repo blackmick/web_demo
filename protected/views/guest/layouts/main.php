@@ -28,6 +28,7 @@
 </head>
 
 <body>
+GGGGG
 <div id="container">
     <div id="header">
         <!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->

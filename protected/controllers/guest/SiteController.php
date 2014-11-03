@@ -55,6 +55,7 @@ class SiteController extends Controller
                     $url = "/myjober/admin";
                     break;
                 default:
+                    var_dump($type);
                     $this->render('index');
                     break;
             }

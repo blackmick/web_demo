@@ -55,7 +55,7 @@ class AccountController extends ComController{
     public function actionLogout()
     {
         Yii::app()->user->logout();
-        $this->redirect(Yii::app()->homeUrl);
+        $this->redirect("/myjober/");
     }
 
     /**

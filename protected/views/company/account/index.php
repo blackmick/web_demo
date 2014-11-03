@@ -9,7 +9,7 @@ $this->pageTitle=Yii::app()->name;
 ?>
 <div class="row">
     <?php
-    echo CHtml::link('退出登录',Yii::app()->createUrl('site/logout'));
+    echo CHtml::link('退出登录',Yii::app()->createUrl('account/logout'));
     ?>
 </div>
 <div class="row">

@@ -26,22 +26,22 @@
     </div><!-- header -->
     <div id="mainmenu-bar">
         <div id="mainmenu">
-            <!--		--><?php //$this->widget('zii.widgets.CMenu',array(
-            //			'items'=>array(
-            //				array('label'=>'主页', 'url'=>array('/site/index')),
-            //				array('label'=>'关于', 'url'=>array('/site/page', 'view'=>'about')),
-            //				array(
-            //                    'label'=>'登录',
-            //                    'url'=>array('/account/login'),
-            //                    'visible'=> (Yii::app()->user->isGuest || Yii::app()->user->getType() != 'personal')
-            //                ),
-            //                array(
-            //                    'label' => '账户管理('.Yii::app()->user->name.')',
-            //                    'url' =>array('/account/index'),
-            //                    'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'personal'),
-            //                ),
-            //			),
-            //		)); ?>
+            		<?php $this->widget('zii.widgets.CMenu',array(
+            			'items'=>array(
+            				array('label'=>'主页', 'url'=>array('/site/index')),
+            				array('label'=>'关于', 'url'=>array('/site/page', 'view'=>'about')),
+            				array(
+                                'label'=>'登录',
+                                'url'=>array('/account/login'),
+                                'visible'=> (Yii::app()->user->isGuest || Yii::app()->user->getType() != 'personal')
+                            ),
+                            array(
+                                'label' => '账户管理('.Yii::app()->user->name.')',
+                                'url' =>array('/account/index'),
+                                'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'personal'),
+                            ),
+            			),
+            		)); ?>
         </div><!-- mainmenu -->
     </div>
 <div class="container" id="page">

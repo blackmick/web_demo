@@ -14,9 +14,9 @@ return array(
 
 	// autoloading model and component classes
 	'import'=>array(
-		'application.models.*',
-        'application.models.dataModels.*',
-        'application.models.pageModels.*',
+//		'application.models.*',
+//        'application.models.dataModels.*',
+//        'application.models.pageModels.*',
 		'application.components.*',
 	),
 
@@ -37,6 +37,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+            'class' => 'application.components.WebUser',
 		),
 		// uncomment the following to enable URLs in path-format
 		/*

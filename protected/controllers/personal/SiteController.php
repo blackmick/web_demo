@@ -8,7 +8,7 @@ class SiteController extends PersonalController
     public function filters(){
         return array(
             array(
-                'PersonalFilter - login,error'
+                'PersonalFilter - index, error'
             )
         );
     }
@@ -53,6 +53,10 @@ class SiteController extends PersonalController
 //                $this->redirect($this->createUrl('login'));
 //            }
 //        }
+        if (Yii::app()->user->getIsGuestWithType('personal')){
+//            var_dump("HERE");
+            $this->layout='main_unlogin';
+        }
 
         $this->render('index');
 	}

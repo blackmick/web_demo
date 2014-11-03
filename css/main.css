@@ -67,6 +67,7 @@ body
 {
     margin: 0;
     padding: 0;
+    /*width : 980px;*/
     border: 0;
     background: #333333;
     height: 42px;
@@ -103,13 +104,17 @@ body
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+    margin: 0 auto;
+    width: 980px;
+	background:white url(images/mainmenu.backgroud.png) repeat-x left top;
 }
 
 #mainmenu ul
 {
-	padding:6px 20px 5px 20px;
-	margin:0px;
+	padding:14px 20px 10px 20px;
+	margin:0;
+    vertical-align: middle;
+    /*text-align: center;*/
 }
 
 #mainmenu ul li
@@ -121,10 +126,11 @@ body
 {
 	color:#ffffff;
 	background-color:transparent;
-	font-size:12px;
+	font-size:16px;
 	font-weight:bold;
 	text-decoration:none;
-	padding:5px 8px;
+    margin: 0;
+	padding:10px 64px;
 }
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a

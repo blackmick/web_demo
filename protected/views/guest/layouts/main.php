@@ -26,8 +26,10 @@
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-
-<body style="background-image: url(/myjober/images/index_background.jpg)">
+<?php $background_url = Yii::app()->baseUrl."/images/index_background.jpg";
+//echo "<body style=\"background-image: url({$background_url})\">"
+?>
+<body>
 <div id="container">
     <div id="header">
         <!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->
@@ -51,22 +53,7 @@
                 )); ?><!-- breadcrumbs -->
             <?php endif?>
         </div>
-        <div class="content-main">
-            <!--        <div class="content-pannel">-->
-            <!--            <div style="height: 30%;background: #F8F8F8">-->
-            <!---->
-            <!--            </div>-->
-            <!--            <div style="height: 40%;background: #FCFCFC">-->
-            <!---->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!---->
-            <!--        <div class="content-pannel">-->
-            <!---->
-            <!--        </div>-->
-            <!--        <div class="content-pannel">-->
-            <!--        </div>-->
-
+        <div class="content-main" style="filter:alpha(opacity=100);-moz-opacity: 1.0;opacity: 1.0;background: none">
             <?php echo $content; ?>
         </div>
 

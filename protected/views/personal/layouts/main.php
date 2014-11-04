@@ -28,12 +28,22 @@
         <div id="mainmenu">
             		<?php $this->widget('zii.widgets.CMenu',array(
             			'items'=>array(
-            				array('label'=>'主页', 'url'=>array('/site/index')),
-            				array('label'=>'关于', 'url'=>array('/site/page', 'view'=>'about')),
+            				array('label'=>'个人中心首页', 'url'=>array('/profile/index')),
+            				array('label'=>'简历中心', 'url'=>array('/profile/index')),
             				array(
-                                'label'=>'登录',
-                                'url'=>array('/account/login'),
-                                'visible'=> (Yii::app()->user->isGuest || Yii::app()->user->getType() != 'personal')
+                                'label'=>'找职位',
+                                'url'=>array('/search/job')),
+                            array(
+                                'label'=>'找企业',
+                                'url'=>array('/search/company'),
+                            ),
+                            array(
+                                'label' => '我应聘的职位',
+                                'url'=>array('/job/applied'),
+                            ),
+                            array(
+                                'label'=>'我收藏的职位',
+                                'url' => array('/job/favorite'),
                             ),
                             array(
                                 'label' => '账户管理('.Yii::app()->user->name.')',
@@ -53,21 +63,6 @@
         	<?php endif?>
     </div>
     <div class="content-main">
-<!--        <div class="content-pannel">-->
-<!--            <div style="height: 30%;background: #F8F8F8">-->
-<!---->
-<!--            </div>-->
-<!--            <div style="height: 40%;background: #FCFCFC">-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="content-pannel">-->
-<!---->
-<!--        </div>-->
-<!--        <div class="content-pannel">-->
-<!--        </div>-->
-
         	<?php echo $content; ?>
     </div>
     <div class="content-sidebar">

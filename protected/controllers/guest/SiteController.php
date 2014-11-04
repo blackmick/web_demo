@@ -48,30 +48,41 @@ class SiteController extends Controller
             $url="";
             switch($type){
                 case "personal":
-                    $url = "/myjober/personal";
+                    $url = Yii::app()->baseUrl."/personal";
                     break;
                 case "company":
-                    $url = "/myjober/company";
+                    $url = Yii::app()->baseUrl."/company";
                     break;
                 case "admin":
-                    $url = "/myjober/admin";
+                    $url = Yii::app()->baseUrl."/admin";
                     break;
                 default:
-                    $personalModel = new PersonalLoginForm();
-                    $companyModel = new CompanyLoginForm();
-                    $this->render('index',
-                        array(
-                            'personalModel' => $personalModel,
-                            'companyModel' => $companyModel
-                        )
-                        );
+                    $this->processLogin();
+                    Yii::app()->end();
                     break;
             }
             $this->redirect($url);
         }
 
+        $this->processLogin();
+    }
+
+    private function processLogin(){
         $personalModel = new PersonalLoginForm();
         $companyModel = new CompanyLoginForm();
+
+        if (isset($_POST['PersonalLoginForm'])){
+            $personalModel->attributes = $_POST['PersonalLoginForm'];
+            if ($personalModel->validate() && $personalModel->login()){
+                $this->redirect(Yii::app()->baseUrl.'/personal');
+            }
+        }else if (isset($_POST['CompanyLoginForm'])){
+            $companyModel->attributes = $_POST['CompanyLoginForm'];
+            if ($companyModel->validate() && $companyModel->login()){
+                $this->redirect(Yii::app()->baseUrl.'/company');
+            }
+        }
+
         $this->render('index',
             array(
                 'personalModel' => $personalModel,

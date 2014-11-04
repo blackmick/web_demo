@@ -46,7 +46,7 @@ class PersonalLoginForm extends CFormModel
      * Authenticates the password.
      * This is the 'authenticate' validator as declared in rules().
      */
-    public function authenticate($attribute,$params)
+    public function authenticate($attribute=null,$params=null)
     {
         if(!$this->hasErrors())
         {
@@ -62,8 +62,9 @@ class PersonalLoginForm extends CFormModel
      */
     public function login()
     {
-        Yii::app()->user->login($this->_identity, 3600*24*30);
-        return true;
+        return Yii::app()->user->login($this->_identity, 3600*24*30);
+
+//        return true;
     }
 
     public function isAttached(){

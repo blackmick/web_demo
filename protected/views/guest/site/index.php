@@ -8,6 +8,9 @@
 ?>
 
 <?php
+$login_personal = $this->renderPartial('login_personal', array('model' => $personalModel), true);
+$register_personal = $this->renderPartial('register_personal', array('model'=>$personalModel), true);
+
 $this->widget('zii.widgets.jui.CJuiTabs',
     array(
         'tabs' => array(
@@ -20,5 +23,14 @@ $this->widget('zii.widgets.jui.CJuiTabs',
                     'model' => $companyModel
                 ),
                 true)
-    )));
+        ),
+        'htmlOptions' => array(
+            'style' => "filter:alpha(opacity=80);-moz-opacity: 0.8;opacity: 0.8;background: url(/web_demo/css/images/background.png);",
+        ),
+        'options' => array(
+//            'collapsible' => true,
+//            'width' => 200,
+            'heightStyle' => 'content',
+        )
+    ));
 ?>

@@ -7,6 +7,10 @@
  */
 ?>
 
+<script type="text/javascript">
+//    $("#personalLoginSwitch").
+</script>
+
 <div class="form">
     <?php
         $form = $this->beginWidget('CActiveForm',
@@ -15,10 +19,9 @@
             )
             );
     ?>
-    <p class="note">标记<span class="required">*</span>的是必填项</p>
     <div class="row">
         <?php echo $form->labelEx($model,'账号名'); ?>
-        <?php echo $form->textField($model,'username'); ?>
+        <?php echo $form->textField($model,'username',array('AUTOCOMPLETE'=>'off')); ?>
         <?php echo $form->error($model,'username'); ?>
     </div>
 

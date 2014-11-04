@@ -27,8 +27,7 @@
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
-GGGGG
+<body style="background-image: url(/myjober/images/index_background.jpg)">
 <div id="container">
     <div id="header">
         <!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->
@@ -38,17 +37,8 @@ GGGGG
             <?php $this->widget('zii.widgets.CMenu',array(
                 'items'=>array(
                     array('label'=>'主页', 'url'=>array('/site/index')),
+                    array('label'=>'职位订阅器', 'url'=>array('/subscriber/demo')),
                     array('label'=>'关于', 'url'=>array('/site/page', 'view'=>'about')),
-                    array(
-                        'label'=>'登录',
-                        'url'=>array('/account/login'),
-                        'visible'=> (Yii::app()->user->isGuest || Yii::app()->user->getType() != 'personal')
-                    ),
-                    array(
-                        'label' => '账户管理('.Yii::app()->user->name.')',
-                        'url' =>array('/account/index'),
-                        'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'personal'),
-                    ),
                 ),
             )); ?>
         </div><!-- mainmenu -->
@@ -78,9 +68,6 @@ GGGGG
             <!--        </div>-->
 
             <?php echo $content; ?>
-        </div>
-        <div class="content-sidebar">
-            sidebar
         </div>
 
         <div id="footer">

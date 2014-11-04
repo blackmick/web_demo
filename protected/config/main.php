@@ -76,8 +76,14 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
+//                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
 					'levels'=>'error, warning, notice, trace',
 				),
+                array(
+                    'class' => 'ext.yiidebugtb.XWebDebugRouter',
+                    'config' => 'alignLeft, opaque, runInDebug, fixedPos, collapsed, yamlStyle',
+                    'levels'=>'error, warning, trace, profile, info',
+                )
 				// uncomment the following to show log messages on web pages
 				/*
 				array(

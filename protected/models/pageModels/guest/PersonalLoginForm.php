@@ -5,7 +5,7 @@
  * Date: 14/10/28
  * Time: 下午12:31
  */
-class UserLoginForm extends CFormModel
+class PersonalLoginForm extends CFormModel
 {
     public $username;
     public $password;

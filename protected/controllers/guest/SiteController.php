@@ -41,6 +41,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = 'login';
+        $model = null;
         if (!Yii::app()->user->getIsGuest()){
             $type = Yii::app()->user->getType();
             $url="";
@@ -55,14 +57,27 @@ class SiteController extends Controller
                     $url = "/myjober/admin";
                     break;
                 default:
-                    var_dump($type);
-                    $this->render('index');
+                    $personalModel = new PersonalLoginForm();
+                    $companyModel = new CompanyLoginForm();
+                    $this->render('index',
+                        array(
+                            'personalModel' => $personalModel,
+                            'companyModel' => $companyModel
+                        )
+                        );
                     break;
             }
             $this->redirect($url);
         }
 
-        $this->render('index');
+        $personalModel = new PersonalLoginForm();
+        $companyModel = new CompanyLoginForm();
+        $this->render('index',
+            array(
+                'personalModel' => $personalModel,
+                'companyModel' => $companyModel
+            )
+        );
     }
 
     /**

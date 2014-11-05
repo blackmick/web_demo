@@ -1,2 +1,7 @@
 .DS_Store
 *.log
+assets/*
+protected/runtime/*
+protected/runtime/application.log
+
+protected/runtime/application.log

@@ -48,6 +48,7 @@ body
 
 .segment
 {
+    clear:both;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
@@ -62,9 +63,15 @@ body
     display: table-cell;
     overflow: hidden;
 }
+
 .segment-content{
     clear:both;
     margin: 5px 50px 5px 50px;
+}
+
+.sidebar-segment-content{
+    clear:both;
+    margin:0;
 }
 
 .dash-split-line
@@ -84,7 +91,7 @@ body
     width: 20%;
     /*height: 400px;*/
     /*border: 2px solid #EFEFEF;*/
-    display:table-cell;
+    display:table;
     /*background: #8a1f11;*/
 }
 
@@ -162,7 +169,7 @@ body
 {
 	color:#ffffff;
 	background-color:transparent;
-    font-family: "Microsoft YaHei",微软雅黑,MicrosoftJhengHei,华文细黑,STHeiti,MingLiu;
+    font-family: "Microsoft yahei",微软雅黑,MicrosoftJhengHei,华文细黑,STHeiti,MingLiu;
 	font-size:16px;
 	font-weight:bold;
 	text-decoration:none;

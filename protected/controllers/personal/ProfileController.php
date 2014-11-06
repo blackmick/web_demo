@@ -11,14 +11,16 @@ class ProfileController extends PersonalController {
         $user = User::model()->findByPk(Yii::app()->user->getId());
 //        $this->layout = 'profile';
         $objectiveForm = new ObjectiveForm();
+        $baseInfoEditForm = new BaseInfoEditForm();
         $this->render('index',
             array(
                 'user'=>$user,
                 'objective'=>$objectiveForm,
+                'baseInfoEdit' => $baseInfoEditForm,
             ));
     }
 
-    public function actionAjaxObjetive(){
+    public function actionAjaxUpdate(){
 
     }
 } 

@@ -35,24 +35,6 @@ class SiteController extends PersonalController
 	 */
 	public function actionIndex()
 	{
-//        if (Yii::app()->user->getIsGuest() || Yii::app()->user->getType() != 'personal')
-//        {
-//            $this->redirect($this->createUrl('login'));
-//        }else{
-//            $ca = CompanyAccount::model()->findByPk(Yii::app()->user->getId());
-//            if ($ca){
-//                $model = Company::model()->findByPk($ca->cid);
-//                if ($model){
-//                    $this->render('index', array('model' => $model));
-//                    Yii::app()->end();
-//                }else{
-//                    $this->redirect(Yii::app()->createUrl('company/attach'));
-//                }
-//            }else{
-//                Yii::app()->user->logout();
-//                $this->redirect($this->createUrl('login'));
-//            }
-//        }
         if (Yii::app()->user->getIsGuestWithType('personal')){
             $this->redirect(Yii::app()->createUrl('guest'));
         }

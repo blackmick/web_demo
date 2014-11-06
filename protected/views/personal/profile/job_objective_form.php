@@ -9,14 +9,18 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $("#job_objective_cancel").click(function(){
-            $("#job_objective_form").hide();
-            $("#job_objective_summary").show();
+            $("#job_objective_form").slideUp();
+            $("#job_objective_summary").slideDown();
+            $("#job_objective_modify").show();
         });
     });
 </script>
 <div style="border: 5px solid #F2F2F2;padding: 20px">
     <?php
-    $form = $this->beginWidget('CActiveForm', array('id'=>'JobObjectiveForm'));
+        $form = $this->beginWidget('CActiveForm',
+            array(
+                'id'=>'JobObjectiveForm'
+            ));
     ?>
 
     <div class="row">
@@ -30,6 +34,10 @@
     <div class="row">
         <?php echo $form->labelEx($model, '期望地点');?>
         <?php echo $form->textField($model, 'location');?>
+    </div>
+    <div class="row">
+        <?php echo $form->labelEx($model, '期望年薪');?>
+        <?php echo $form->textField($model, 'salary');?>
     </div>
 
     <div class="row">

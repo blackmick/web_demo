@@ -259,4 +259,8 @@ class Profile extends CActiveRecord
             $exp->delete();
         }
     }
+
+    public function getCompletion(){
+        return 50;
+    }
 }

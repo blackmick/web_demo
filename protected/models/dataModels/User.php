@@ -235,4 +235,16 @@ class User extends CActiveRecord
             )
         );
     }
+
+    public function getHeadUrl(){
+        $url = Utils::getImgUrl($this->head);
+        if (empty($url)){
+            return Yii::app()->baseUrl.'/images/Users.png';
+        }
+        return $url;
+    }
+
+    public function getProfiles(){
+        return Profile::model()->findByAttributes(array('uid'=>$this->id));
+    }
 }

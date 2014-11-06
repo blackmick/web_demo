@@ -54,11 +54,18 @@ class SiteController extends PersonalController
 //            }
 //        }
         if (Yii::app()->user->getIsGuestWithType('personal')){
-//            var_dump("HERE");
-            $this->layout='main_unlogin';
+            $this->redirect(Yii::app()->createUrl('guest'));
         }
 
-        $this->render('index');
+        $user = User::model()->findByPk(Yii::app()->user->getId());
+
+        if (!$user){
+            Yii::log('can not find the user', CLogger::LEVEL_ERROR);
+            throw new CHttpException(404);
+        }
+        $profile = $user->getProfiles();
+
+        $this->render('index', array('user'=>$user, 'profile'=>$profile));
 	}
 
 	/**

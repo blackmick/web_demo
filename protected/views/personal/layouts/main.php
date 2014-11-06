@@ -23,20 +23,26 @@
 <div id="container">
     <div id="header">
         <!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->
+        <div id="logo" style="float: left">
+            <?php
+            echo CHtml::image('/web_demo/images/logo.png','',array('height'=>50));
+            ?>
+        </div>
+        <div id="user-state">
+            <?php
+            echo Yii::app()->user->getName();
+            ?>
+        </div>
     </div><!-- header -->
     <div id="mainmenu-bar">
         <div id="mainmenu">
             		<?php $this->widget('zii.widgets.CMenu',array(
             			'items'=>array(
-            				array('label'=>'个人中心首页', 'url'=>array('/profile/index')),
-            				array('label'=>'简历中心', 'url'=>array('/profile/index')),
+            				array('label'=>'个人首页', 'url'=>array('site/index')),
+            				array('label'=>'我的简历', 'url'=>array('/profile/index')),
             				array(
-                                'label'=>'找职位',
-                                'url'=>array('/search/job')),
-                            array(
-                                'label'=>'找企业',
-                                'url'=>array('/search/company'),
-                            ),
+                                'label'=>'搜索',
+                                'url'=>array('/search/index')),
                             array(
                                 'label' => '我应聘的职位',
                                 'url'=>array('/job/applied'),
@@ -46,9 +52,8 @@
                                 'url' => array('/job/favorite'),
                             ),
                             array(
-                                'label' => '账户管理('.Yii::app()->user->name.')',
-                                'url' =>array('/account/index'),
-                                'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getType() == 'personal'),
+                                'label' => '我的职位订阅器',
+                                'url' =>array('/subscriber/index'),
                             ),
             			),
             		)); ?>
@@ -62,13 +67,9 @@
         		)); ?><!-- breadcrumbs -->
         	<?php endif?>
     </div>
-    <div class="content-main">
+<!--    <div class="content-main">-->
         	<?php echo $content; ?>
-    </div>
-    <div class="content-sidebar">
-        sidebar
-    </div>
-
+<!--    </div>-->
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>

@@ -52,7 +52,7 @@ class AccountController extends Controller{
      * 登录页面
      */
     public function actionLogin(){
-        $model=new UserLoginForm();
+        $model=new LoginForm();
 
         if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
         {

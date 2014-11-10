@@ -8,8 +8,8 @@
 
 class PersonalController extends Controller{
     public function filters(){
-//        Yii::app()->user->loginUrl = Yii::app()->createUrl('account/login');
-        Yii::app()->user->loginUrl=Yii::app()->baseUrl.'/index.php';
+        Yii::app()->user->loginUrl = Yii::app()->createUrl('account/login');
+//        Yii::app()->user->loginUrl=Yii::app()->baseUrl.'/index.php';
         return array(
             array('PersonalFilter')
         );

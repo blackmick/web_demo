@@ -36,27 +36,31 @@
     </div><!-- header -->
     <div id="mainmenu-bar">
         <div id="mainmenu">
-            		<?php $this->widget('zii.widgets.CMenu',array(
-            			'items'=>array(
-            				array('label'=>'个人首页', 'url'=>array('site/index')),
-            				array('label'=>'我的简历', 'url'=>array('/profile/index')),
-            				array(
-                                'label'=>'搜索',
-                                'url'=>array('/search/index')),
-                            array(
-                                'label' => '我应聘的职位',
-                                'url'=>array('/job/applied'),
-                            ),
-                            array(
-                                'label'=>'我收藏的职位',
-                                'url' => array('/job/favorite'),
-                            ),
-                            array(
-                                'label' => '我的职位订阅器',
-                                'url' =>array('/subscriber/index'),
-                            ),
-            			),
-            		)); ?>
+                    <?php
+                    if (Yii::app()->user->isLoginWithType('personal')){
+                        //登录用户,菜单定义
+                        $this->widget('zii.widgets.CMenu',array(
+                            'items' => array(
+                                array('label'=>'个人首页', 'url'=>array('site/index')),
+                                array('label'=>'我的简历', 'url'=>array('/profile/index')),
+                                array('label'=>'搜索', 'url'=>array('/search/index')),
+                                array('label' => '我应聘的职位', 'url'=>array('/job/applied')),
+                                array('label'=>'我收藏的职位', 'url' => array('/job/favorite')),
+                                array('label' => '我的职位订阅器', 'url' =>array('/subscriber/index')),
+                            )
+                        ));
+                    }else{
+                        //未登录用户,菜单定义
+                        $this->widget('zii.widgets.CMenu',array(
+                            'items' => array(
+                                array('label'=>'主页', 'url'=>array('site/index')),
+                                array('label'=>'搜索', 'url'=>array('site/index')),
+                                array('label'=>'职位订阅器', 'url'=>array('site/index')),
+                                array('label'=>'关于我们','url'=>array('site/page',"view"=>'about'))
+                            )
+                        ));
+                    }
+                    ?>
         </div><!-- mainmenu -->
     </div>
 <div class="container" id="page">

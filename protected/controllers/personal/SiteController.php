@@ -8,7 +8,7 @@ class SiteController extends PersonalController
     public function filters(){
         return array(
             array(
-                'PersonalFilter - error'
+                'PersonalFilter - error, page'
             )
         );
     }

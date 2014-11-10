@@ -45,4 +45,9 @@ class WebUser extends CWebUser{
     public function getIsGuestWithType($type){
         return ($this->getIsGuest() || ($this->getType() != $type));
     }
+
+    public function isLoginWithType($type)
+    {
+        return (!$this->getIsGuest() && $this->getType() == $type);
+    }
 }

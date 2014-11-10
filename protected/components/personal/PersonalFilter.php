@@ -15,7 +15,8 @@ class PersonalFilter extends CFilter{
 
 
         if (Yii::app()->user->getType() !== 'personal'){
-            $filterChain->controller->redirect(Yii::app()->baseUrl.'/index.php');
+//            $filterChain->controller->redirect(Yii::app()->baseUrl.'/index.php');
+            $filterChain->controller->redirect(Yii::app()->createUrl('account/login'));
             return false;
         }
         return true;

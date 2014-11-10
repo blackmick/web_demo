@@ -12,8 +12,8 @@
  * @property integer $last_login
  * @property integer $pro_state
  * @property string  $head
- * @property integer $reg_from 0-normal
- * @property string  $profile
+ * @property integer $profile_cn
+ * @property integer $profile_en
  * @property integer $create_time
  * @property integer $update_time
  * @property integer $status
@@ -29,15 +29,12 @@ class User extends CActiveRecord
 
     const TOKEN_PERIOD  = 36000000;
 
-//    private static $_userType = array(
-//        self::UT_NORMAL => "普通用户",
-//        self::UT_ENTERPRISE => "企业用户",
-//        self::UT_HUNTER => "猎头用户",
-//        self::UT_ADMIN => "管理员",
-//    );
+    public $lastWorkInfo;
+
 	/**
 	 * @return string the associated database table name
 	 */
+
 	public function tableName()
 	{
 		return '{{user}}';

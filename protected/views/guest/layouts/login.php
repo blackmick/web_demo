@@ -39,7 +39,7 @@
             background: none;
             /*border: 3px #E13738;*/
             /*border-style: solid none none none;*/
-            background-image: url(/web_demo/images/index_background.jpg);
+            background-image: url(/myjober/images/index_background.jpg);
             background-repeat:no-repeat;
             background-position:center top;
         }

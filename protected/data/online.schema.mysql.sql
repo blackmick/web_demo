@@ -3,7 +3,6 @@
 DROP TABLE IF EXISTS `tbl_user`;
 CREATE TABLE IF NOT EXISTS `tbl_user` (
   `id`          INT          NOT NULL PRIMARY KEY AUTO_INCREMENT,
-#   `type`        INT NOT NULL DEFAULT '0',
   `username`    VARCHAR(32)  NOT NULL,
   `password`    VARCHAR(64)  NOT NULL,
   `nickname`    VARCHAR(32)  NOT NULL DEFAULT ''
@@ -16,9 +15,8 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   COMMENT '就业状态 0-毕业生/实习生 1-职场精英',
   `reg_from`    INT          NOT NULL DEFAULT '0'
   COMMENT '账号来源, 0-本站注册;1-sina微博账号;3-qq账号;4-百度账号',
-  `profile`     VARCHAR(256) NOT NULL DEFAULT ''
-  COMMENT '简历信息 tbl_profile表的id list',
-#   `cid` INT NOT NULL DEFAULT '0' COMMENT '企业账户关联的企业id',
+  `profile_cn`  INT          NOT NULL DEFAULT '0',
+  `profile_en`  INT          NOT NULL DEFAULT '0',
   `create_time` INT          NOT NULL DEFAULT '0',
   `update_time` INT          NOT NULL DEFAULT '0',
   `status`      INT          NOT NULL DEFAULT '0'
@@ -41,10 +39,6 @@ CREATE TABLE IF NOT EXISTS `tbl_profile` (
   `industry`    INT          NOT NULL DEFAULT '0',
   `phone`       VARCHAR(64)  NOT NULL DEFAULT '',
   `email`       VARCHAR(256) NOT NULL DEFAULT '',
-  `edu`         VARCHAR(64)  NOT NULL DEFAULT ''
-  COMMENT '教育背景,表tbl_education的id list',
-  `exp`         VARCHAR(128) NOT NULL DEFAULT ''
-  COMMENT '工作经验,表tbl_experience的id list',
   `tags`        VARCHAR(256) NOT NULL DEFAULT ''
   COMMENT '整个简历的关键字',
   `create_time` INT          NOT NULL DEFAULT '0',
@@ -59,7 +53,7 @@ DROP TABLE IF EXISTS `tbl_education`;
 CREATE TABLE IF NOT EXISTS `tbl_education` (
   `id`          INT           NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `uid`         INT           NOT NULL,
-  `profile_id`  INT           NOT NULL,
+  `pid`         INT           NOT NULL,
   `college`     VARCHAR(64)   NOT NULL DEFAULT '',
   `major`       VARCHAR(128)  NOT NULL DEFAULT '',
   `degree`      INT           NOT NULL DEFAULT '0',
@@ -75,11 +69,11 @@ CREATE TABLE IF NOT EXISTS `tbl_education` (
   DEFAULT CHARSET =utf8;
 
 # /*---用户工作经验表---*/
-DROP TABLE IF EXISTS `tbl_experience`;
-CREATE TABLE IF NOT EXISTS `tbl_experience` (
+DROP TABLE IF EXISTS `tbl_work_experience`;
+CREATE TABLE IF NOT EXISTS `tbl_work_experience` (
   `id`          INT           NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `uid`         INT           NOT NULL,
-  `profile_id`  INT           NOT NULL,
+  `pid`         INT           NOT NULL,
   `start_time`  INT           NOT NULL DEFAULT '0',
   `end_time`    INT           NOT NULL DEFAULT '0',
   `company`     VARCHAR(64)   NOT NULL DEFAULT '',
@@ -92,7 +86,21 @@ CREATE TABLE IF NOT EXISTS `tbl_experience` (
   `status`      INT           NOT NULL DEFAULT '0'
 )
   ENGINE =InnoDB
-  DEFAULT CHARSET =utf8;
+  DEFAULT CHARSET =utf8
+
+DROP TABLE IF EXISTS `tbl_project_experience`;
+CREATE TABLE IF NOT EXISTS `tb_project_experience`
+(
+  `id`          INT           NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `pid`         INT           NOT NULL,
+  `description` VARCHAR(1024) NOT NULL DEFAULT '',
+  `start_time`  INT           NOT NULL DEFAULT '0',
+  `end_time`    INT           NOT NULL DEFAULT '0',
+  `create_time` INT           NOT NULL DEFAULT '0',
+  `update_time` INT           NOT NULL DEFAULT '0'
+)
+  ENGINE =InnoDB
+  DEFAULT CHARSET =utf8
 
 
 # 企业用户账号表
@@ -194,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `tbl_job` (
 DROP TABLE IF EXISTS `tbl_company`;
 CREATE TABLE IF NOT EXISTS `tbl_company` (
   `id`            INT           NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `max_account` INT NOT NULL DEFAULT '1',
+  `max_account`   INT           NOT NULL DEFAULT '1',
   `name`          VARCHAR(64)   NOT NULL
   COMMENT '公司名称,必需',
   `type`          INT           NOT NULL DEFAULT '3'
@@ -205,10 +213,11 @@ CREATE TABLE IF NOT EXISTS `tbl_company` (
   COMMENT '规模 0:~100 people;1:100~500 people;2:500~1000 people;3:1000~',
   `homepage`      VARCHAR(128)  NOT NULL DEFAULT ''
   COMMENT '主页',
-  `description`          VARCHAR(2048) NOT NULL DEFAULT ''
+  `description`   VARCHAR(2048) NOT NULL DEFAULT ''
   COMMENT '简介',
 #   以下为扩展信息
-  `location` INT NOT NULL DEFAULT '0' COMMENT '地区信息',
+  `location`      INT           NOT NULL DEFAULT '0'
+  COMMENT '地区信息',
   `address`       VARCHAR(256)  NOT NULL DEFAULT ''
   COMMENT '公司地址',
   `contact`       VARCHAR(32)   NOT NULL DEFAULT ''

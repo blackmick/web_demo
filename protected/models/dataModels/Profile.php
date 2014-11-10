@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "{{resume}}".
+ * This is the model class for table "{{profile}}".
  *
- * The followings are the available columns in table '{{resume}}':
+ * The followings are the available columns in table '{{profile}}':
  * @property integer $id
  * @property integer $uid
  * @property integer $language
@@ -12,11 +12,16 @@
  * @property string  $last_name
  * @property integer $location
  * @property integer $industry
+ * @property string  $profession
  * @property string  $title
+ *
+ * @property integer $birth
+ * @property integer $marriage
+ * @property string  nationality
  * @property string  $phone
  * @property string  $email
- * @property string  $edu
- * @property string  $exp
+ * @property integer state
+ *
  * @property string  $tags
  * @property integer $create_time
  * @property integer $update_time
@@ -25,9 +30,12 @@
 
 class Profile extends CActiveRecord
 {
+    const LANG_CN = 1;
+    const LANG_EN = 2;
+
     private $_langMap = array(
-        '1' => 'Chinese',
-        '2' => 'English',
+        self::LANG_CN => 'Chinese',
+        self::LANG_EN => 'English',
     );
 	/**
 	 * @return string the associated database table name
@@ -73,12 +81,6 @@ class Profile extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-//			'id' => 'ID',
-//			'user_id' => 'User',
-//			'language' => 'Language',
-//			'edu' => 'Education',
-//			'exp' => 'Experience',
-//			'keyword' => 'Keyword',
 		);
 	}
 
@@ -100,13 +102,7 @@ class Profile extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
 		$criteria->compare('uid',$this->uid);
-		$criteria->compare('language',$this->language);
-//        $criteria->compare('title', $this->title);
-		$criteria->compare('edu',$this->edu,true);
-		$criteria->compare('exp',$this->exp,true);
-		$criteria->compare('tags',$this->tags,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -128,7 +124,6 @@ class Profile extends CActiveRecord
      * @return array
      */
     public function getData($id = null){
-//        $oData = $this->getAttributes();
         if ($id){
             $this->findByPk($id);
         }
@@ -210,7 +205,7 @@ class Profile extends CActiveRecord
         return false;
     }
 
-    public function addEdu($edu){
+    private function addEdu($edu){
         if ($this->edu != ''){
             //$this->edu = $this->edu . ',' . $edu->id;
             $eduList = explode(',', $this->edu);
@@ -224,7 +219,7 @@ class Profile extends CActiveRecord
         $this->save() or ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'save edu fail.'.json_encode($this->getErrors()));
     }
 
-    public function addExp($exp){
+    private function addExp($exp){
         if ($this->exp != ''){
 //            $this->exp = $this->edu . ',' . $exp->id;
             $expList = explode(',', $this->exp);
@@ -238,7 +233,7 @@ class Profile extends CActiveRecord
         $this->save() or ErrorHelper::Fatal(ErrorHelper::ERR_SAVE_FAIL, 'save exp fail.'.json_encode($this->getErrors()));
     }
 
-    public function deleteEdu(){
+    private function deleteEdu(){
         $edu_list = explode(',', $this->edu);
         $arrEdu = Education::model()->findAllByPk($edu_list);
         if (!$arrEdu)
@@ -249,7 +244,7 @@ class Profile extends CActiveRecord
         }
     }
 
-    public function deleteExp(){
+    private function deleteExp(){
         $exp_list = explode(',', $this->exp);
         $arrExp = Experience::model()->findAllByPk($exp_list);
         if (!$arrExp)
@@ -262,5 +257,9 @@ class Profile extends CActiveRecord
 
     public function getCompletion(){
         return 50;
+    }
+
+    private function addProjExp(){
+
     }
 }

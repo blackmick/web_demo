@@ -25,11 +25,9 @@ $this->widget('zii.widgets.jui.CJuiTabs',
                 true)
         ),
         'htmlOptions' => array(
-            'style' => "filter:alpha(opacity=80);-moz-opacity: 0.8;opacity: 0.8;background: url(/web_demo/css/images/background.png);",
+            'style' => "filter:alpha(opacity=80);-moz-opacity: 0.8;opacity: 0.8;background: url(/myjober/css/images/background.png);",
         ),
         'options' => array(
-//            'collapsible' => true,
-//            'width' => 200,
             'heightStyle' => 'content',
         )
     ));

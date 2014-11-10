@@ -25,7 +25,7 @@
         <!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->
         <div id="logo" style="float: left">
             <?php
-            echo CHtml::image('/web_demo/images/logo.png','',array('height'=>50));
+            echo CHtml::image(Yii::app()->baseUrl.'/images/logo.png','',array('height'=>50));
             ?>
         </div>
         <div id="user-state">
@@ -60,10 +60,13 @@
         </div><!-- mainmenu -->
     </div>
 <div class="container" id="page">
-    <div class="breadcrumbs" style="height: 32px">
+    <div class="breadcrumbs">
+            <span style="float:left;padding: 5px 10px">当前位置:</span>
         	<?php if(isset($this->breadcrumbs)):?>
         		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
         			'links'=>$this->breadcrumbs,
+                    'homeLink'=>CHtml::link(Yii::t('zii','首页'),Yii::app()->homeUrl),
+                    'separator'=>' &gt; ',
         		)); ?><!-- breadcrumbs -->
         	<?php endif?>
     </div>

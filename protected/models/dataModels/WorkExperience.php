@@ -6,7 +6,7 @@
  * The followings are the available columns in table '{{experience}}':
  * @property integer $id
  * @property integer $uid
- * @property integer $profile_id
+ * @property integer $pid
  * @property integer $start_time
  * @property integer $end_time
  * @property string $company
@@ -19,7 +19,7 @@
  * @property integer $status
  */
 
-class Experience extends CActiveRecord
+class WorkExperience extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -37,14 +37,14 @@ class Experience extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('uid, profile_id', 'required'),
-			array('uid, profile_id, start_time, end_time, create_time, update_time, status', 'numerical', 'integerOnly'=>true),
+			array('uid, pid', 'required'),
+			array('uid, pid, start_time, end_time, create_time, update_time, status', 'numerical', 'integerOnly'=>true),
 			array('company', 'length', 'max'=>64),
 			array('description', 'length', 'max'=>2048),
 			array('tags', 'length', 'max'=>128),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, uid, profile_id', 'safe', 'on'=>'search'),
+			array('id, uid, pid', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,17 +65,11 @@ class Experience extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			//'id' => 'ID',
-			//'user_id' => 'User',
-//			'profile_id' => 'Profile',
 			'start_time' => 'Start Time',
 			'end_time' => 'End Time',
 			'company' => 'Company',
 			'description' => 'Description',
 			'tags' => 'tag',
-//			'create_time' => 'Create Time',
-//			'update_time' => 'Update Time',
-//			'status' => 'Status',
 		);
 	}
 
@@ -99,7 +93,7 @@ class Experience extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('uid',$this->uid);
-		$criteria->compare('profile_id',$this->profile_id);
+		$criteria->compare('pid',$this->pid);
 		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(

@@ -6,7 +6,7 @@
  * The followings are the available columns in table '{{education}}':
  * @property integer $id
  * @property integer $uid
- * @property integer $profile_id
+ * @property integer $pid
  * @property string  $college
  * @property string  $major
  * @property integer $degree
@@ -41,13 +41,13 @@ class Education extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('uid, profile_id, college, major, degree, start_time, end_time', 'required'),
-			array('uid, profile_id, degree, start_time, end_time, create_time, update_time, status', 'numerical', 'integerOnly'=>true),
+			array('uid, pid, college, major, degree, start_time, end_time', 'required'),
+			array('uid, pid, degree, start_time, end_time, create_time, update_time, status', 'numerical', 'integerOnly'=>true),
 			array('college', 'length', 'max'=>64),
 			array('major', 'length', 'max'=>128),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_id, profile_id, start_time, end_time', 'safe', 'on'=>'search'),
+			array('id, uid, pid, start_time, end_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,17 +68,11 @@ class Education extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-//			'id' => 'ID',
-//			'user_id' => 'User',
-//			'profile_id' => 'Profile',
 			'college' => 'College',
 			'major' => 'Major',
 			'degree' => 'Degree',
 			'start_time' => 'Start Time',
 			'end_time' => 'End Time',
-//			'create_time' => 'Create Time',
-//			'update_time' => 'Update Time',
-//			'status' => 'Status',
 		);
 	}
 
@@ -100,17 +94,7 @@ class Education extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('uid',$this->uid);
-		$criteria->compare('profile_id',$this->profile_id);
-		$criteria->compare('college',$this->college,true);
-		$criteria->compare('major',$this->major,true);
-		$criteria->compare('degree',$this->degree);
-//		$criteria->compare('start_time',$this->start_time);
-//		$criteria->compare('end_time',$this->end_time);
-//		$criteria->compare('create_time',$this->create_time);
-//		$criteria->compare('update_time',$this->update_time);
-		$criteria->compare('status',$this->status);
+		$criteria->compare('pid',$this->pid);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

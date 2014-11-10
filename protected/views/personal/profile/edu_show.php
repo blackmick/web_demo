@@ -10,7 +10,7 @@
 <?php
 $model=array();
 for($i=0;$i<3;$i++){
-    $exp = new Experience();
+    $exp = new WorkExperience();
     $exp->start_time = time()-100000*$i;
     $exp->end_time = time()-20000*$i;
     $exp->company='Company_'.$i;
